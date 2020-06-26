@@ -22,6 +22,28 @@ jobs:
           name: Run Tests
           command: yarn run test
 
+  test-e2e:
+    docker:
+      - image: circleci/node:10
+    working_directory: ~/immerge-website
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn install --immutable
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+      - run:
+          name: Run Tests
+          command: yarn run e2e
+
   build:
     docker:
       - image: circleci/node:10
@@ -75,6 +97,9 @@ workflows:
     jobs:
       - build
       - test:
+          requires:
+            - build
+      - test-e2e:
           requires:
             - build
       - deploy:
