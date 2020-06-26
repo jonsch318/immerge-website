@@ -2,8 +2,27 @@ version: 2.1
 executors:
   build-executor:
     docker:
-      - image circleci/node:10
+      - image: circleci/node:10
     working_directory: ~/immerge-website
+
+workflows:
+  version: 2
+  build-test-and-deploy:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
+      - test-e2e:
+          requires:
+            - build
+      - deploy:
+          requires:
+            - test
+            - test-e2e
+          filters:
+            branches:
+              only: master
 
 jobs:
   test:
@@ -85,22 +104,3 @@ jobs:
       - run:
           name: deploy to firebase hosting
           command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"
-
-workflows:
-  version: 2
-  build-test-and-deploy:
-    jobs:
-      - build
-      - test:
-          requires:
-            - build
-      - test-e2e:
-          requires:
-            - build
-      - deploy:
-          requires:
-            - test
-            - test-e2e
-          filters:
-            branches:
-              only: master
