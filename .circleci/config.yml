@@ -100,7 +100,7 @@ jobs:
     executor: build-executor
     steps:
       - attach_workspace:
-        at: /tmp/workspace
+          at: /tmp/workspace
       - run:
           name: deploy to firebase hosting
           command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"
