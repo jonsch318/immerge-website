@@ -91,19 +91,16 @@ jobs:
       - run:
           name: build angular project
           command: yarn run build --prod
-      - run:
-          name: create temporary directory
-          command: mkdir temp
       - persist_to_workspace:
-          root: temp
+          root: ./
           paths:
-            - echo-output
+            - ./
   
   deploy:
     executor: build-executor
     steps:
       - attach_workspace:
-          at: temp
+          at: ./
       - run:
           name: deploy to firebase hosting
           command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"
