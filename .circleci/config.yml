@@ -20,7 +20,7 @@ jobs:
             - ~/.cache/yarn
       - run:
           name: Run Tests
-          command: yarn run test --browsers=ChromeHeadlessCI
+          command: yarn run test --no-watch --no-progress --browsers=ChromeHeadlessCI
 
   test-e2e:
     docker:
