@@ -2,7 +2,7 @@ version: 2
 jobs:
   test:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:10-browsers
     working_directory: ~/immerge-website
     steps:
       - checkout
@@ -20,11 +20,11 @@ jobs:
             - ~/.cache/yarn
       - run:
           name: Run Tests
-          command: yarn run test
+          command: yarn run test --browsers=ChromeHeadlessCI
 
   test-e2e:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:10-browsers
     working_directory: ~/immerge-website
     steps:
       - checkout
@@ -42,7 +42,7 @@ jobs:
             - ~/.cache/yarn
       - run:
           name: Run Tests
-          command: yarn run e2e
+          command: yarn run e2e --protractor-config=e2e/protractor-ci.conf.js
 
   build:
     docker:
@@ -63,8 +63,11 @@ jobs:
           paths:
             - ~/.cache/yarn
       - run:
+          name: linting angular project
+          command: yarn run lint
+      - run:
           name: build angular project
-          command: yarn run build
+          command: yarn run build --prod
   
   deploy:
     docker:
