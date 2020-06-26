@@ -24,8 +24,6 @@
     ],
     "component-selector": [
       true,
-      "element",
-      "app",
       "kebab-case"
     ],
     "eofline": true,
@@ -77,8 +75,7 @@
       "as-needed"
     ],
     "quotemark": [
-      true,
-      "single"
+      false
     ],
     "semicolon": {
       "options": [

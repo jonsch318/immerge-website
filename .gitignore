@@ -105,3 +105,6 @@ dist
 
 # Firebase cache
 .firebase/
+
+# Jetbrain idea
+.idea/

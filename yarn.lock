@@ -186,6 +186,13 @@
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-9.1.11.tgz#fa246144649236613598a0471aa7f39b60f986b5"
   integrity sha512-t4WHrh6ot1r8zdV+3fJz7g9rCok77c9CiIevhH2dR/idxD+HtFR0wqmcBQzsn+rNVB0f0TiSHDrj+TeELIFyWw==
 
+"@angular/material@^10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@angular/material/-/material-10.0.0.tgz#ecd83ade893b1501a9db5e2f98ab94015a9e7cee"
+  integrity sha512-u8uORUlDUYo8NlyXAw7BJdkvAXZiIQuSQ58a+RVlR37CGjI07vrECj4i4Z22XOjBGykvsKj0rhq/hCPzXy/RTQ==
+  dependencies:
+    tslib "^2.0.0"
+
 "@angular/platform-browser-dynamic@~9.1.9":
   version "9.1.11"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-9.1.11.tgz#82af336b05e0d7b7478a2ca7f6282825b211f340"
@@ -9906,6 +9913,11 @@ tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
   integrity sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
+
+tslib@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.0.tgz#18d13fc2dce04051e20f074cc8387fd8089ce4f3"
+  integrity sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g==
 
 tslint@~6.1.0:
   version "6.1.2"
