@@ -18,7 +18,7 @@ import { NavbarComponent } from './containers/navbar/navbar.component';
   ],
 })
 export class CoreModule{
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<CoreModule> {
     return {
       ngModule: CoreModule,
       providers: [],
