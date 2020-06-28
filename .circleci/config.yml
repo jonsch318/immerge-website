@@ -24,6 +24,7 @@ workflows:
             branches:
               only: master
 
+
 jobs:
   test:
     docker:
@@ -95,7 +96,7 @@ jobs:
           root: ./
           paths:
             - ./
-  
+
   deploy:
     executor: build-executor
     steps:
