@@ -28,7 +28,7 @@ module.exports = {
         project: ["./tsconfig.json", "./tsconfig.app.json", "./tsconfig.base.json", "./tsconfig.spec.json"],
         sourceType: "module",
     },
-    plugins: ["@typescript-eslint", "@typescript-eslint/tslint"],
+    plugins: ["@typescript-eslint"],
     rules: {
         "@typescript-eslint/indent": [
             "error",
@@ -48,7 +48,7 @@ module.exports = {
         "@typescript-eslint/no-unsafe-member-access": "warn",
         "@typescript-eslint/no-unsafe-call": "warn",
         "@typescript-eslint/no-empty-function": "off",
-        "@typescript-eslint/no-floating-promises": "warn",
+        "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/member-delimiter-style": [
             "error",
@@ -56,6 +56,35 @@ module.exports = {
                 singleline: {
                     delimiter: "semi",
                     requireLast: true,
+                },
+            },
+        ],
+        "use-isnan": "error",
+        "spaced-comment": "off",
+        "@typescript-eslint/adjacent-overload-signatures": "error",
+        "@typescript-eslint/array-type": "off",
+        "@typescript-eslint/ban-types": [
+            "error",
+            {
+                types: {
+                    Object: {
+                        message: "Avoid using the `Object` type. Did you mean `object`?",
+                    },
+                    Function: {
+                        message: "Avoid using the `Function` type. Prefer a specific function type, like `() => void`.",
+                    },
+                    Boolean: {
+                        message: "Avoid using the `Boolean` type. Did you mean `boolean`?",
+                    },
+                    Number: {
+                        message: "Avoid using the `Number` type. Did you mean `number`?",
+                    },
+                    String: {
+                        message: "Avoid using the `String` type. Did you mean `string`?",
+                    },
+                    Symbol: {
+                        message: "Avoid using the `Symbol` type. Did you mean `symbol`?",
+                    },
                 },
             },
         ],
