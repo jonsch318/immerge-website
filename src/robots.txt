@@ -1,0 +1,3 @@
+User-Agent: *
+Dissallow: /search?q=*
+Dissallow: /search/?q=*
