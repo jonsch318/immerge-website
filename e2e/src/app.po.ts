@@ -1,7 +1,7 @@
-import { browser, by, element } from 'protractor';
+import { browser, by, element } from "protractor";
 
 export class AppPage {
-  navigateTo(): Promise<unknown> {
-    return browser.get(browser.baseUrl) as Promise<unknown>;
-  }
+    navigateTo(): Promise<unknown> {
+        return browser.get(browser.baseUrl) as Promise<unknown>;
+    }
 }
