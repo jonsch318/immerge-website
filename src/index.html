@@ -1,13 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>ImmergeWebsite</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <title>Immerge</title>
+        <base href="/" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-P1B6CP9JWZ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-P1B6CP9JWZ");
+        </script>
+    </head>
+    <body>
+        <app-root></app-root>
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyBMi1RHKUS49x3E9P85kEx-NXJYIKNGryY",
+                authDomain: "immerge-website.firebaseapp.com",
+                databaseURL: "https://immerge-website.firebaseio.com",
+                projectId: "immerge-website",
+                storageBucket: "immerge-website.appspot.com",
+                messagingSenderId: "843672314099",
+                appId: "1:843672314099:web:553b2e282fae4ccb809786",
+                measurementId: "G-ETGD3M770G",
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+    </body>
 </html>
