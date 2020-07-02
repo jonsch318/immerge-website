@@ -80,6 +80,40 @@ $im-lightgrey:(
   )
 );
 
+$im-grey:(
+  50: #fff,
+  100: #fafafa,
+  200: #f4f4f4,
+  300: #ebebeb,
+  400: #e4e4e4,
+  500: #cacaca,
+  600: #545454,
+  700: #333333,
+  800: #202020,
+  900: #101010,
+  A100: #fff,
+  A200: #dedede,
+  A400: #232323,
+  A700: #000,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $dark-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+
 $im-gray: $im-lightgrey;
 
 $im-red: (
