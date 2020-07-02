@@ -1,0 +1,153 @@
+
+$dark-text: #000;
+$light-text: #fff;
+
+$dark-primary-text: #000;
+$dark-secondary-text: rgba(#000, 0.7);
+$dark-disabled-text: rgba(#000, 0.38);
+$dark-dividers: rgba(#000, 0.12);
+$dark-focused: rgba(#000, 0.12);
+
+$light-primary-text: #fff;
+$light-secondary-text: rgba(#fff, 0.7);
+$light-disabled-text: rgba(#fff, 0.5);
+$light-dividers: rgba(#fff, 0.12);
+$light-focused: rgba(#fff, 0.12);
+
+$im-blue: (
+  50: #adc5f0,
+  100: #6f97de,
+  200: #6aa0d2,
+  300: #2d7cc5,
+  400: #255BAE,
+  500: #254BAE,
+  600: #1E3190,
+  700: #11336d,
+  800: #0e2d61,
+  900: #0b2147,
+  A100: #6593e6,
+  A200: #366fc7,
+  A400: #1f519c,
+  A700: #133369,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+$im-lightgrey:(
+  50: #fff,
+  100: #fff,
+  200: #fdfdfd,
+  300: #fafafa,
+  400: #f8f8f8,
+  500: #f4f4f4,
+  600: #ebebeb,
+  700: #E4E4E4,
+  800: #b4b4b4,
+  900: #969696,
+  A100: #fff,
+  A200: #fafafa,
+  A400: #eaeaea,
+  A700: #eeeeee,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $dark-primary-text,
+    600: $dark-primary-text,
+    700: $dark-primary-text,
+    800: $dark-primary-text,
+    900: $dark-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $dark-primary-text,
+  )
+);
+
+$im-gray: $im-lightgrey;
+
+$im-red: (
+  50: #ffebee,
+  100: #ffcdd2,
+  200: #ef9a9a,
+  300: #e57373,
+  400: #ef5350,
+  500: #f44336,
+  600: #e53935,
+  700: #d32f2f,
+  800: #c62828,
+  900: #b71c1c,
+  A100: #ff8a80,
+  A200: #ff5252,
+  A400: #ff1744,
+  A700: #d50000,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+$mat-light-theme-background: (
+  background: #fff,
+  status-bar: map_get($im-lightgrey, 500),
+  app-bar: map_get($im-lightgrey, 500),
+  hover: rgba(#000, 0.12),
+  card: #fff,
+  dialog: #fff,
+  disabled-button: $dark-disabled-text,
+  raised-button: #fff,
+  focused-button: $dark-focused,
+  selected-button: map_get($im-lightgrey, 700),
+  selected-disabled-button: map_get($im-lightgrey, 800),
+  disabled-button-toggle: map_get($im-lightgrey, 500),
+  unselected-chip: map_get($im-lightgrey, 700),
+  disabled-list-option: map_get($im-lightgrey, 500),
+  tooltip: #616161,
+);
+
+$mat-light-theme-foreground: (
+  base: $dark-primary-text,
+  divider: $dark-dividers,
+  dividers: $dark-dividers,
+  disabled: $dark-disabled-text,
+  disabled-button: rgba(black, 0.26),
+  disabled-text: $dark-disabled-text,
+  elevation: #000,
+  hint-text: $dark-disabled-text,
+  secondary-text: $light-text,
+  icon: rgba(#000, 0.54),
+  icons: rgba(#000, 0.54),
+  text: $dark-primary-text,
+  slider-min: $dark-primary-text,
+  slider-off: rgba(#000, 0.26),
+  slider-off-active: rgba(#000, 0.4),
+);
+

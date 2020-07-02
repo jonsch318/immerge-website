@@ -8,7 +8,7 @@ import { StaticModule } from "./static/static.module";
 
 @NgModule({
     declarations: [],
-    imports: [BrowserModule, AppRoutingModule, CoreModule, StaticModule],
+    imports: [BrowserModule, AppRoutingModule, CoreModule.forRoot(), StaticModule],
     providers: [],
     bootstrap: [AppComponent],
 })
