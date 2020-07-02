@@ -1,7 +1,8 @@
 @import "~@angular/material/theming";
 @import "./palette";
 
-$primary: mat-palette($im-lightgrey);
+$primary: mat-palette($im-gray, 200, 50, 400);
+//$primary: mat-palette($im-grey, 800,700,900);
 $accent: mat-palette($im-blue);
 $warn: mat-palette($im-red);
 

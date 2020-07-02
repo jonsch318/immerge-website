@@ -7,6 +7,8 @@
 @include  mat-core($roboto-font-theme);
 @include angular-material-theme($im-lightgrey-blue-theme);
 
+@import "global-styles";
+
 html, body
 {
   height: 100%;
