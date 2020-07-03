@@ -1,16 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { HeaderMenuComponent } from './header-menu.component';
+import { HeaderMenuComponent } from "./header-menu.component";
 
-describe('HeaderMenuComponent', () => {
+describe("HeaderMenuComponent", () => {
   let component: HeaderMenuComponent;
   let fixture: ComponentFixture<HeaderMenuComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeaderMenuComponent ]
-    })
-    .compileComponents();
+      declarations: [HeaderMenuComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,7 @@ describe('HeaderMenuComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

@@ -7,8 +7,8 @@ import { StaticRoutingModule } from "./static-routing.module";
 import { MatButtonModule } from "@angular/material/button";
 
 @NgModule({
-    imports: [CommonModule, RouterModule, StaticRoutingModule, CoreModule, MatButtonModule],
-    declarations: [IndexComponent],
-    exports: [],
+  imports: [CommonModule, RouterModule, StaticRoutingModule, CoreModule, MatButtonModule],
+  declarations: [IndexComponent],
+  exports: [],
 })
 export class StaticModule {}

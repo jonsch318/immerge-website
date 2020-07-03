@@ -1,0 +1,5 @@
+@import "./containers/navbar/navbar-theme.component";
+
+@mixin im-navbar-theme($theme){
+  @include im-navbar-component-theme($theme);
+}

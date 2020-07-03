@@ -3,14 +3,14 @@ import { RouterModule, Routes } from "@angular/router";
 import { IndexComponent } from "./containers/index/index.component";
 
 export const routes: Routes = [
-    {
-        path: "",
-        component: IndexComponent,
-    },
+  {
+    path: "",
+    component: IndexComponent,
+  },
 ];
 
 @NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
 })
 export class StaticRoutingModule {}
