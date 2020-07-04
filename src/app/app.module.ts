@@ -10,7 +10,14 @@ import { NavbarModule } from "./navbar/navbar.module";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, CoreModule.forRoot(), StaticModule, SharedModule, NavbarModule],
+  imports: [
+    BrowserModule,
+    CoreModule.forRoot(),
+    StaticModule,
+    SharedModule,
+    NavbarModule,
+    AppRoutingModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
