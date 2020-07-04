@@ -1,0 +1,22 @@
+@import "identity-theme.component";
+@import "../../nav-config";
+
+$identity-button-height: 30px;
+
+:host{
+  justify-self: right;
+}
+
+.identity-container{
+  height: $nav-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button{
+    height: $identity-button-height;
+    align-items: center;
+    display: flex;
+  }
+
+}

@@ -1,0 +1,14 @@
+@import "navbar-theme.component";
+@import "../../nav-config";
+
+.header{
+  height: $nav-height;
+
+  .header-container{
+    margin: 0 50px;
+    padding: 0 15px;
+    display: flex;
+    height: $nav-height;
+  }
+
+}

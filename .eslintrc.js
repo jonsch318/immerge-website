@@ -32,7 +32,7 @@ module.exports = {
     rules: {
         "@typescript-eslint/indent": [
             "error",
-            4,
+            2,
             {
                 SwitchCase: 1,
                 CallExpression: { arguments: "first" },

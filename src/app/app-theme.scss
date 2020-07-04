@@ -1,0 +1,5 @@
+@import "./navbar/m-navbar";
+
+@mixin im-app-theme($theme){
+  @include im-navbar-theme($theme);
+}

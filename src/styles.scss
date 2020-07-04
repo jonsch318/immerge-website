@@ -3,9 +3,11 @@
 @import "./themes/font-palette";
 @import "./themes/palette";
 @import "./themes/light-theme";
+@import "./app/app-theme";
 
 @include  mat-core($roboto-font-theme);
 @include angular-material-theme($im-lightgrey-blue-theme);
+@include im-app-theme($im-lightgrey-blue-theme);
 
 @import "global-styles";
 

@@ -1,0 +1,22 @@
+@import "../../nav-config";
+
+:host{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex: auto;
+  order: inherit;
+  flex-direction: row;
+}
+
+.header-menu{
+  display: flex;
+
+  .header-menu-item{
+    margin-right: 16px;
+  }
+}
+
+.header-menu-full{
+  width: 100%;
+}
