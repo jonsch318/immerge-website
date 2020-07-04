@@ -1,0 +1,18 @@
+@import "~@angular/material/theming";
+
+@mixin im-nav-identity-component-theme($theme){
+  $primary: map_get($theme, primary);
+  $accent: map_get($theme, accent);
+  $warn: map_get($theme, warn);
+  $foreground: map_get($theme, foreground);
+  $background: map_get($theme, background);
+
+  .identity-container {
+    .identity-signin{
+      background: mat-contrast($primary, 200);
+      color: mat-color($primary, 200);
+    }
+  }
+
+
+}
