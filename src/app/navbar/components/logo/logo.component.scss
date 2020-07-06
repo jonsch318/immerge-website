@@ -2,24 +2,10 @@
 @import "../../../../theming";
 @import "../../nav-config";
 
-:host{
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  flex: auto;
-  order: inherit;
-  flex-direction: row;
-  position: relative;
-}
 
 .logo{
   display: flex;
   height: $nav-height;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%,0);
-  width: 100%;
 
   .logo-caption{
     display: none;
@@ -33,9 +19,6 @@
 }
 
 @media only screen and (min-width: $width-desktop) {
-  :host{
-    margin-right: 20px;
-  }
 
   .logo{
     display: flex;

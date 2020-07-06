@@ -1,27 +1,31 @@
 @import "../../nav-config";
 @import "../../../../theming";
 
-:host{
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  flex: auto;
-  order: inherit;
-  flex-direction: row;
+.header-menu-list{
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.header-menu{
-  display: flex;
 
-  .header-menu-item{
-    margin-right: 16px;
-  }
-}
-
-.header-menu-full{
-  width: 100%;
-}
 
 @media (min-width: $width-desktop) {
+  .header-menu-list{
+    display: flex;
+    outline: none;
+  }
 
+  .dropdown-menu{
+    position: absolute;
+    top: 95%;
+    background: #6aa0d2;
+    left: -32px;
+    padding: 10px 32px;
+
+    a{
+      width: 300px;
+      display: flex;
+    }
+  }
 }
