@@ -1,4 +1,5 @@
 @import "../../nav-config";
+@import "../../../../theming";
 
 :host{
   display: flex;
@@ -19,4 +20,8 @@
 
 .header-menu-full{
   width: 100%;
+}
+
+@media (min-width: $width-desktop) {
+
 }

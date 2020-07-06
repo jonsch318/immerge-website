@@ -1,7 +1,27 @@
 <header class="header">
   <div class="header-container">
-    <nav-logo></nav-logo>
-    <nav-header-menu></nav-header-menu>
-    <nav-identity></nav-identity>
+    <div class="header-mobile d-flex flex-items-center" [equalWidth]="identity">
+      <button mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon>search</mat-icon>
+      </button>
+    </div>
+    <div class="logo d-flex flex-items-center">
+      <img src="assets/logo.svg" />
+    </div>
+    <div class="header-menu open">
+      <nav>
+        <ul>
+          <li><a routerLink="/projects">Projects</a></li>
+          <li><a routerLink="/about">About us</a></li>
+          <li><a routerLink="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="identity d-flex flex-items-center" #identity>
+      <nav-identity></nav-identity>
+    </div>
   </div>
 </header>

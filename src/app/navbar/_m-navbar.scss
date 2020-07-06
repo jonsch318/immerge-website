@@ -1,11 +1,9 @@
 @import "./containers/navbar/navbar-theme.component";
 @import "./components/logo/logo-theme.component";
 @import "./components/identity/identity-theme.component";
-@import "./components/link/link-theming.component";
 
 @mixin im-navbar-theme($theme){
   @include im-navbar-component-theme($theme);
   @include im-nav-logo-component-theme($theme);
   @include im-nav-identity-component-theme($theme);
-  @include im-nav-link-component-theme($theme);
 }
