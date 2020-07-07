@@ -8,7 +8,6 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { EqualWidthDirective } from "./directives/equal-width.directive";
 import { CommonModule } from "@angular/common";
-import { MatMenuModule } from "@angular/material/menu";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { Dropdown } from "./components/dropdown/dropdown";
 import { DropdownTrigger } from "./components/dropdown/dropdown-trigger";

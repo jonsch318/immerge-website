@@ -9,17 +9,21 @@ import {
   VerticalConnectionPos,
 } from "@angular/cdk/overlay";
 import { TemplatePortal } from "@angular/cdk/portal";
+import { Subscription, merge, Observable } from "rxjs";
 
 @Directive({
   selector: "[dropdownTriggerFor]",
   host: {
     "(click)": "openDropdown()",
+    "(mouseenter)": "_handleMouseEnter()",
   },
 })
 export class DropdownTrigger {
   private _dropdown: DropdownPanel;
   private _overlayRef: OverlayRef;
   private _portal: TemplatePortal;
+  private _closeSubscription = Subscription.EMPTY;
+  private _closingActionSubscription = Subscription.EMPTY;
 
   @Input("dropdownTriggerFor")
   get dropdown() {
@@ -30,13 +34,26 @@ export class DropdownTrigger {
       return;
     }
     this._dropdown = dropdown;
+
+    this._closeSubscription = dropdown.close.asObservable().subscribe((type) => {
+      this._disposeDropdown();
+    });
   }
+
+  @Input("openDropdownOnHover")
+  openDropdownOnHover: boolean = true;
 
   constructor(
     private _elementRef: ElementRef<HTMLElement>,
     private _overlay: Overlay,
     private _viewContainerRef: ViewContainerRef,
   ) {}
+
+  _handleMouseEnter() {
+    if (this.openDropdownOnHover) {
+      this.openDropdown();
+    }
+  }
 
   openDropdown() {
     const overlayRef = this._createOverlay();
@@ -50,15 +67,24 @@ export class DropdownTrigger {
     overlayRef.attach(this._getPortal());
     this._dropdown.startAnimation();
 
-    this._overlayRef.backdropClick().subscribe(() => {
-      overlayRef.dispose();
-      console.log("Clicked backdrop");
+    this._closingActionSubscription = this._menuClosingActions().subscribe(() => {
+      this.closeDropdown();
     });
   }
 
   closeDropdown() {
     this._overlayRef.dispose();
     this._overlayRef = null;
+  }
+
+  private _disposeDropdown() {
+    const dropdown = this.dropdown;
+  }
+
+  private _menuClosingActions(): Observable<any> {
+    const backdrop = this._overlayRef.backdropClick();
+    const detachments = this._overlayRef.detachments();
+    return merge(backdrop, detachments);
   }
 
   private _getOverlayConfig(): OverlayConfig {
@@ -68,11 +94,11 @@ export class DropdownTrigger {
         .flexibleConnectedTo(this._elementRef)
         .withLockedPosition()
         .withTransformOriginOn("im-dropdown-panel"),
-      hasBackdrop: true,
+      hasBackdrop: false,
       backdropClass: "im-dropdown-backdrop",
-      direction: this._dropdown.Direction,
+      direction: this._dropdown.direction,
       panelClass: "im-dropdown-panel",
-      scrollStrategy: this._dropdown.ScrollStrategy,
+      scrollStrategy: this._dropdown.scrollStrategy,
     });
   }
 
@@ -80,6 +106,18 @@ export class DropdownTrigger {
     const config = this._getOverlayConfig();
     this._overlayRef = this._overlay.create(config);
     return this._overlayRef;
+  }
+
+  private _setDropdownStatus(isOpen: boolean) {}
+
+  private _getPortal(): TemplatePortal {
+    if (!this._portal || this._portal.templateRef !== this._dropdown.templateRef) {
+      this._portal = new TemplatePortal(
+        this._dropdown.templateRef,
+        this._viewContainerRef,
+      );
+    }
+    return this._portal;
   }
 
   private _setPosition(positionStrategy: FlexibleConnectedPositionStrategy) {
@@ -106,17 +144,5 @@ export class DropdownTrigger {
         },
       ])
       .withPush();
-  }
-
-  /** Gets the portal that should be attached to the overlay. */
-  private _getPortal(): TemplatePortal {
-    if (!this._portal || this._portal.templateRef !== this._dropdown.TemplateRef) {
-      this._portal = new TemplatePortal(
-        this._dropdown.TemplateRef,
-        this._viewContainerRef,
-      );
-    }
-
-    return this._portal;
   }
 }

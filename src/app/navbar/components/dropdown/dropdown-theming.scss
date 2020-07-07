@@ -1,0 +1,27 @@
+
+@import "~@angular/material/theming";
+
+@mixin im-dropdown-theme($theme){
+  $primary: map_get($theme, primary);
+  $accent: map_get($theme, accent);
+  $warn: map_get($theme, warn);
+  $foreground: map_get($theme, foreground);
+  $background: map_get($theme, background);
+
+  .cdk-overlay-container{
+    .im-dropdown-backdrop{
+    }
+    .cdk-overlay-pane.im-dropdown-panel{
+    }
+  }
+
+  .im-dropdown-content{
+    padding: 10px 16px;
+    background: mat-color($primary, 400);
+    transform: translate(-16px,0);
+    border-radius: 5px;
+  }
+
+}
+
+
