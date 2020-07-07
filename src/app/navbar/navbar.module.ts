@@ -10,7 +10,9 @@ import { EqualWidthDirective } from "./directives/equal-width.directive";
 import { CommonModule } from "@angular/common";
 import { MatMenuModule } from "@angular/material/menu";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { DropdownComponent } from "./components/dropdown/dropdown.component";
+import { Dropdown } from "./components/dropdown/dropdown";
+import { DropdownTrigger } from "./components/dropdown/dropdown-trigger";
+import { OverlayModule } from "@angular/cdk/overlay";
 
 @NgModule({
   imports: [
@@ -19,7 +21,7 @@ import { DropdownComponent } from "./components/dropdown/dropdown.component";
     RouterModule,
     MatButtonModule,
     MatIconModule,
-    MatMenuModule,
+    OverlayModule,
   ],
   declarations: [
     NavbarComponent,
@@ -27,7 +29,8 @@ import { DropdownComponent } from "./components/dropdown/dropdown.component";
     HeaderMenuComponent,
     IdentityComponent,
     EqualWidthDirective,
-    DropdownComponent,
+    Dropdown,
+    DropdownTrigger,
   ],
   exports: [NavbarComponent],
 })
