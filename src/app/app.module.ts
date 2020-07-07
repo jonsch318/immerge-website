@@ -7,15 +7,19 @@ import { AppComponent } from "./app.component";
 import { StaticModule } from "./static/static.module";
 import { SharedModule } from "./shared/shared.module";
 import { NavbarModule } from "./navbar/navbar.module";
+import { MatMenuModule } from "@angular/material/menu";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     CoreModule.forRoot(),
     StaticModule,
     SharedModule,
     NavbarModule,
+    MatMenuModule,
     AppRoutingModule,
   ],
   providers: [],

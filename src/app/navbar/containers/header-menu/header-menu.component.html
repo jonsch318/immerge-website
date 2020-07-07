@@ -1,10 +1,10 @@
 <nav class="header-menu-nav">
   <ul class="header-menu-list">
     <li class="header-menu-item">
-      <span class="header-menu-link" routerLink="/projects">Projects</span>
-      <div class="dropdown-menu">
-        <a routerLink="hello">Hello</a>
-      </div>
+      <button mat-button [matMenuTriggerFor]="menu">Projects</button>
+      <nav-dropdown-menu #menu>
+        <button>Test</button>
+      </nav-dropdown-menu>
     </li>
   </ul>
 </nav>
