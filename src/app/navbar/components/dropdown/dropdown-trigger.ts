@@ -49,6 +49,11 @@ export class DropdownTrigger {
 
     overlayRef.attach(this._getPortal());
     this._dropdown.startAnimation();
+
+    this._overlayRef.backdropClick().subscribe(() => {
+      overlayRef.dispose();
+      console.log("Clicked backdrop");
+    });
   }
 
   closeDropdown() {
@@ -63,6 +68,7 @@ export class DropdownTrigger {
         .flexibleConnectedTo(this._elementRef)
         .withLockedPosition()
         .withTransformOriginOn("im-dropdown-panel"),
+      hasBackdrop: true,
       backdropClass: "im-dropdown-backdrop",
       direction: this._dropdown.Direction,
       panelClass: "im-dropdown-panel",
@@ -78,37 +84,28 @@ export class DropdownTrigger {
 
   private _setPosition(positionStrategy: FlexibleConnectedPositionStrategy) {
     const [originX, originFallbackX]: HorizontalConnectionPos[] = ["start", "end"];
-
+    const [originY, originFallbackY]: VerticalConnectionPos[] = ["bottom", "top"];
+    const [overlayX, overlayFallbackX]: HorizontalConnectionPos[] = ["start", "end"];
     const [overlayY, overlayFallbackY]: VerticalConnectionPos[] = ["top", "bottom"];
 
-    const [originY, originFallbackY] = [overlayY, overlayFallbackY];
-    const [overlayX, overlayFallbackX] = [originX, originFallbackX];
-    const offsetY = 0;
+    const offsetY = 10;
 
-    positionStrategy.withPositions([
-      { originX, originY, overlayX, overlayY, offsetY },
-      {
-        originX: originFallbackX,
-        originY,
-        overlayX: overlayFallbackX,
-        overlayY,
-        offsetY,
-      },
-      {
-        originX,
-        originY: originFallbackY,
-        overlayX,
-        overlayY: overlayFallbackY,
-        offsetY: -offsetY,
-      },
-      {
-        originX: originFallbackX,
-        originY: originFallbackY,
-        overlayX: overlayFallbackX,
-        overlayY: overlayFallbackY,
-        offsetY: -offsetY,
-      },
-    ]);
+    positionStrategy
+      .withPositions([
+        {
+          originX,
+          originY,
+          overlayX,
+          overlayY,
+        },
+        {
+          originX,
+          originY,
+          overlayX: overlayFallbackX,
+          overlayY,
+        },
+      ])
+      .withPush();
   }
 
   /** Gets the portal that should be attached to the overlay. */

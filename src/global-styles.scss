@@ -1,8 +1,8 @@
 *{
   box-sizing: border-box;
 }
-
-.mat-menu-panel {
-  opacity: 1 !important;
-  transform: scale(1, 1) !important;
+.cdk-overlay-container{
+  .im-dropdown-backdrop{
+    background: rgba(#000, 0.2);
+  }
 }
