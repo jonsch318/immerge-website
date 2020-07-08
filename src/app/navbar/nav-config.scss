@@ -1,1 +1,10 @@
 $nav-height: 40px;
+.header-height{
+  height: $nav-height !important;
+}
+.header-center{
+  align-items: center;
+}
+.header-line-height{
+  line-height: $nav-height !important;
+}

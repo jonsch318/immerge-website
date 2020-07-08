@@ -1,0 +1,11 @@
+<header class="header header-height" [ngClass]="
+{
+  'sidenav': $sidenavOpen | async
+}">
+  <div class="header-container header-height mx-lg-4 mx-1 d-flex header-center">
+    <nav-hamburger class="d-sm-flex d-lg-none mr-1" (menuState)="$sidenavOpen.next($event)"></nav-hamburger>
+    <nav-logo class="d-flex flex-sm-auto justify-content-sm-center mr-lg-2"></nav-logo>
+    <nav-header-menu-lg class="d-lg-flex flex-lg-auto"></nav-header-menu-lg>
+    <nav-identity class="d-flex header-center"></nav-identity>
+  </div>
+</header>

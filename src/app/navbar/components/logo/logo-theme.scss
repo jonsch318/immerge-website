@@ -1,0 +1,15 @@
+@import "~@angular/material/theming";
+
+@mixin im-navbar-logo-theme($theme){
+  $primary: map_get($theme, primary);
+  $foreground: map_get($theme, foreground);
+
+  .logo-container{
+    .logo-caption{
+      color: mat-color($foreground, text) !important;
+    }
+    .logo-image{
+      fill: mat-color($foreground, text) !important;
+    }
+  }
+}
