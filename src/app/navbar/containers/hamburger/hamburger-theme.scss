@@ -1,0 +1,10 @@
+@import "~@angular/material/theming";
+
+@mixin im-navbar-hamburger-theme($theme){
+  $background: map_get($theme, background);
+
+  .header-menu-sm{
+    background: mat-color($background, app-bar);
+  }
+
+}

@@ -1,0 +1,35 @@
+@import "~@angular/material/theming";
+
+@mixin im-pretheme-border-theme($theme){
+  $primary: map_get($theme, primary);
+  $accent: map_get($theme, accent);
+  $warn: map_get($theme, warn);
+  $foreground: map_get($theme, foreground);
+  $background: map_get($theme, background);
+
+
+  .border-p-1{
+    border: 1px solid mat-color($primary, main) !important;
+  }
+  .border-p-y-1{
+    border-top: 1px solid mat-color($primary, main) !important;
+    border-bottom: 1px solid mat-color($primary, main) !important;
+  }
+  .border-p-x-1{
+    border-left: 1px solid mat-color($primary, main) !important;
+    border-right: 1px solid mat-color($primary, main) !important;
+  }
+  .border-p-top-1{
+    border-top: 1px solid mat-color($primary, main) !important;
+  }
+  .border-p-bottom-1{
+    border-bottom: 1px solid mat-color($primary, main) !important;
+  }
+  .border-p-left-1{
+    border-left: 1px solid mat-color($primary, main) !important;
+  }
+  .border-p-right-1{
+    border-right: 1px solid mat-color($primary, main) !important;
+  }
+
+}

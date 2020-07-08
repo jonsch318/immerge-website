@@ -1,0 +1,11 @@
+@import "./pretheme/position";
+@import "./pretheme/display";
+@import "./pretheme/margin";
+@import "./pretheme/padding";
+@import "./pretheme/border";
+@import "./pretheme/typography";
+@import "./pretheme/flexbox";
+
+@mixin im-pretheme-theme($theme){
+  @include im-pretheme-border-theme($theme);
+}

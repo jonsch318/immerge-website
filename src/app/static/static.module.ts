@@ -6,9 +6,19 @@ import { IndexComponent } from "./containers/index/index.component";
 import { StaticRoutingModule } from "./static-routing.module";
 import { MatButtonModule } from "@angular/material/button";
 import { NotFoundComponent } from "./containers/notfound/not-found.component";
+import { MatMenuModule } from "@angular/material/menu";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
-  imports: [CommonModule, RouterModule, StaticRoutingModule, CoreModule, MatButtonModule],
+  imports: [
+    CommonModule,
+    BrowserAnimationsModule,
+    RouterModule,
+    StaticRoutingModule,
+    CoreModule,
+    MatButtonModule,
+    MatMenuModule,
+  ],
   declarations: [IndexComponent, NotFoundComponent],
   exports: [],
 })

@@ -1,0 +1,20 @@
+@import "./../../nav-config";
+@import "./../../../../theming";
+
+.logo-container{
+  line-height: $nav-height !important;
+  .logo-image{
+    width: 22px;
+  }
+  .logo-caption{
+
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .logo-container{
+    .logo-caption{
+      line-height: $nav-height;
+    }
+  }
+}

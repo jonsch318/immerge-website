@@ -1,0 +1,53 @@
+@import "../../../../theming";
+
+.position-static{
+  position: static;
+}
+.position-relative{
+  position: relative !important;
+}
+.position-absolute{
+  position: absolute !important;
+}
+.position-fixed{
+  position: fixed !important;
+}
+.position-sticky{
+  position: sticky;
+}
+
+@media (min-width: $width-desktop) {
+  .position-lg-static{
+    position: static;
+  }
+  .position-lg-relative{
+    position: relative !important;
+  }
+  .position-lg-absolute{
+    position: absolute !important;
+  }
+  .position-lg-fixed{
+    position: fixed !important;
+  }
+  .position-lg-sticky{
+    position: sticky;
+  }
+}
+
+@media (max-width: $width-desktop) {
+  .position-sm-static{
+    position: static;
+  }
+  .position-sm-relative{
+    position: relative !important;
+  }
+  .position-sm-absolute{
+    position: absolute !important;
+  }
+  .position-sm-fixed{
+    position: fixed !important;
+  }
+  .position-sm-sticky{
+    position: sticky;
+  }
+}

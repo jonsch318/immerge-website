@@ -1,0 +1,7 @@
+@import "../../nav-config";
+
+$identity-button-height: 30px;
+button{
+  height: $identity-button-height;
+  align-items: center;
+}
