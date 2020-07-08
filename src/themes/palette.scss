@@ -154,7 +154,7 @@ $mat-light-theme-background: (
   status-bar: map_get($im-lightgrey, 500),
   app-bar: map_get($im-lightgrey, 500),
   hover: rgba(#000, 0.12),
-  card: #fff,
+  card: map_get($im-lightgrey, 700),
   dialog: #fff,
   disabled-button: $dark-disabled-text,
   raised-button: #fff,

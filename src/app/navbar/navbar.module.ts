@@ -9,9 +9,10 @@ import { MatIconModule } from "@angular/material/icon";
 import { EqualWidthDirective } from "./directives/equal-width.directive";
 import { CommonModule } from "@angular/common";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { Dropdown } from "./components/dropdown/dropdown";
-import { DropdownTrigger } from "./components/dropdown/dropdown-trigger";
 import { OverlayModule } from "@angular/cdk/overlay";
+import { DropdownComponent } from "./components/dropdown/dropdown.component";
+import { MatMenuModule } from "@angular/material/menu";
+import { ProjectDropdownComponent } from './containers/project-dropdown/project-dropdown.component';
 
 @NgModule({
   imports: [
@@ -21,6 +22,7 @@ import { OverlayModule } from "@angular/cdk/overlay";
     MatButtonModule,
     MatIconModule,
     OverlayModule,
+    MatMenuModule,
   ],
   declarations: [
     NavbarComponent,
@@ -28,8 +30,8 @@ import { OverlayModule } from "@angular/cdk/overlay";
     HeaderMenuComponent,
     IdentityComponent,
     EqualWidthDirective,
-    Dropdown,
-    DropdownTrigger,
+    DropdownComponent,
+    ProjectDropdownComponent,
   ],
   exports: [NavbarComponent],
 })

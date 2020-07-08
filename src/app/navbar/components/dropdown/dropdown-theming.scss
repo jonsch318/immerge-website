@@ -1,27 +1,51 @@
-
 @import "~@angular/material/theming";
 
-@mixin im-dropdown-theme($theme){
-  $primary: map_get($theme, primary);
-  $accent: map_get($theme, accent);
-  $warn: map_get($theme, warn);
-  $foreground: map_get($theme, foreground);
-  $background: map_get($theme, background);
 
-  .cdk-overlay-container{
-    .im-dropdown-backdrop{
-    }
-    .cdk-overlay-pane.im-dropdown-panel{
+@mixin mat-menu-color($config-or-theme) {
+  $config: mat-get-color-config($config-or-theme);
+  $background: map-get($config, background);
+  $foreground: map-get($config, foreground);
+
+  .mat-menu-panel {
+    @include _mat-theme-overridable-elevation(4, $config);
+    background: mat-color($background, 'card');
+  }
+
+  .mat-menu-item {
+    background: transparent;
+    color: mat-color($foreground, 'text');
+
+    &[disabled] {
+      &, &::after {
+        color: mat-color($foreground, 'disabled');
+      }
     }
   }
 
-  .im-dropdown-content{
-    padding: 10px 16px;
-    background: mat-color($primary, 400);
-    transform: translate(-16px,0);
-    border-radius: 5px;
+  .mat-menu-item .mat-icon-no-color,
+  .mat-menu-item-submenu-trigger::after {
+    color: mat-color($foreground, 'icon');
   }
 
+  .mat-menu-item:hover,
+  .mat-menu-item.cdk-program-focused,
+  .mat-menu-item.cdk-keyboard-focused,
+  .mat-menu-item-highlighted {
+    &:not([disabled]) {
+      background: mat-color($background, 'hover');
+    }
+  }
 }
 
+
+@mixin mat-menu-theme($theme-or-color-config) {
+  $theme: _mat-legacy-get-theme($theme-or-color-config);
+  @include _mat-check-duplicate-theme-styles($theme, 'mat-menu') {
+    $color: mat-get-color-config($theme);
+
+    @if $color != null {
+      @include mat-menu-color($color);
+    }
+  }
+}
 

@@ -1,9 +1,11 @@
 <nav class="header-menu-nav">
   <ul class="header-menu-list">
     <li class="header-menu-item">
-      <a [dropdownTriggerFor]="dropdown">Projects</a>
+      <button class="header-menu-dropdown-trigger" [matMenuTriggerFor]="dropdown">
+        Projects
+      </button>
       <nav-dropdown #dropdown>
-        <button>Hello Dropdown</button>
+        <nav-project-dropdown></nav-project-dropdown>
       </nav-dropdown>
     </li>
   </ul>

@@ -16,16 +16,13 @@
     outline: none;
   }
 
-  .dropdown-menu{
-    position: absolute;
-    top: 95%;
-    background: #6aa0d2;
-    left: -32px;
-    padding: 10px 32px;
-
-    a{
-      width: 300px;
-      display: flex;
-    }
+  .header-menu-dropdown-trigger{
+    outline: none !important;
+    border: none;
+    background: transparent !important;
+    display: flex;
+    height: $nav-height;
+    line-height: $nav-height;
+    cursor: pointer;
   }
 }

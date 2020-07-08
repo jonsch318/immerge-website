@@ -7,5 +7,6 @@
   @include im-navbar-component-theme($theme);
   @include im-nav-logo-component-theme($theme);
   @include im-nav-identity-component-theme($theme);
-  @include im-dropdown-theme($theme);
+  @include mat-menu-theme($theme);
+
 }
