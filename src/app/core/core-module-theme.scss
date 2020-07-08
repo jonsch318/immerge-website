@@ -1,0 +1,5 @@
+@import "./stlye/pretheme";
+
+@mixin im-core-mobile-theme($theme){
+  @include im-pretheme-theme($theme);
+}

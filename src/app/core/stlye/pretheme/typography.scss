@@ -1,0 +1,23 @@
+@import "../../../../theming";
+
+.list-style-none{
+  list-style: none !important;
+}
+.text-decoration-none{
+  text-decoration: none;
+}
+.text-decoration-underline{
+  text-decoration: underline;
+}
+
+@media (min-width: $width-desktop) {
+  .list-style-lg-none{
+    list-style: none !important;
+  }
+  .text-decoration-lg-none{
+    text-decoration: none;
+  }
+  .text-decoration-lg-underline{
+    text-decoration: underline;
+  }
+}
