@@ -1,359 +1,360 @@
 @import "../../../../theming";
+@import "../pretheme-config";
 
 .m-0{
   margin: 0 !important;
 }
 .m-1{
-  margin: 8px !important;
+  margin: $pixel-1 !important;
 }
 .m-2{
-  margin: 16px !important;
+  margin: $pixel-2 !important;
 }
 .m-3{
-  margin: 24px !important;
+  margin: $pixel-3 !important;
 }
 .m-4{
-  margin: 32px !important;
+  margin: $pixel-4 !important;
 }
 
 .my-0{
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  margin-top: $pixel-0 !important;
+  margin-bottom: $pixel-0 !important;
 }
 .my-1{
-  margin-top: 8px !important;
-  margin-bottom: 8px !important;
+  margin-top: $pixel-1 !important;
+  margin-bottom: $pixel-1 !important;
 }
 .my-2{
-  margin-top: 16px !important;
-  margin-bottom: 16px !important;
+  margin-top: $pixel-2 !important;
+  margin-bottom: $pixel-2 !important;
 }
 .my-3{
-  margin-top: 24px !important;
-  margin-bottom: 24px !important;
+  margin-top: $pixel-3 !important;
+  margin-bottom: $pixel-3 !important;
 }
 .my-4{
-  margin-top: 32px !important;
-  margin-bottom: 32px !important;
+  margin-top: $pixel-4 !important;
+  margin-bottom: $pixel-4 !important;
 }
 .mx-0{
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+  margin-left: $pixel-0 !important;
+  margin-right: $pixel-0 !important;
 }
 .mx-1{
-  margin-left: 8px !important;
-  margin-right: 8px !important;
+  margin-left: $pixel-1 !important;
+  margin-right: $pixel-1 !important;
 }
 .mx-2{
-  margin-left: 16px !important;
-  margin-right: 16px !important;
+  margin-left: $pixel-2 !important;
+  margin-right: $pixel-2 !important;
 }
 .mx-3{
-  margin-left: 24px !important;
-  margin-right: 24px !important;
+  margin-left: $pixel-3 !important;
+  margin-right: $pixel-3 !important;
 }
 .mx-4{
-  margin-left: 32px !important;
-  margin-right: 32px !important;
+  margin-left: $pixel-4 !important;
+  margin-right: $pixel-4 !important;
 }
 
 .mt-0{
-  margin-top: 0 !important;
+  margin-top: $pixel-0 !important;
 }
 .mt-1{
-  margin-top: 8px !important;
+  margin-top: $pixel-1 !important;
 }
 .mt-2{
-  margin-top: 16px !important;
+  margin-top: $pixel-2 !important;
 }
 .mt-3{
-  margin-top: 24px !important;
+  margin-top: $pixel-3 !important;
 }
 .mt-4{
-  margin-top: 32px !important;
+  margin-top: $pixel-4 !important;
 }
 .mb-0{
-  margin-bottom: 0 !important;
+  margin-bottom: $pixel-0 !important;
 }
 .mb-1{
-  margin-bottom: 8px !important;
+  margin-bottom: $pixel-1 !important;
 }
 .mb-2{
-  margin-bottom: 16px !important;
+  margin-bottom: $pixel-2 !important;
 }
 .mb-3{
-  margin-bottom: 24px !important;
+  margin-bottom: $pixel-3 !important;
 }
 .mb-4{
-  margin-bottom: 32px !important;
+  margin-bottom: $pixel-4 !important;
 }
 .ml-0{
-  margin-left: 0 !important;
+  margin-left: $pixel-0 !important;
 }
 .ml-1{
-  margin-left: 8px !important;
+  margin-left: $pixel-1 !important;
 }
 .ml-2{
-  margin-left: 16px !important;
+  margin-left: $pixel-2 !important;
 }
 .ml-3{
-  margin-left: 24px !important;
+  margin-left: $pixel-3 !important;
 }
 .ml-4{
-  margin-left: 32px !important;
+  margin-left: $pixel-4 !important;
 }
 .mr-0{
-  margin-right: 0 !important;
+  margin-right: $pixel-0 !important;
 }
 .mr-1{
-  margin-right: 8px !important;
+  margin-right: $pixel-1 !important;
 }
 .mr-2{
-  margin-right: 16px !important;
+  margin-right: $pixel-2 !important;
 }
 .mr-3{
-  margin-right: 24px !important;
+  margin-right: $pixel-3 !important;
 }
 .mr-4{
-  margin-right: 32px !important;
+  margin-right: $pixel-4 !important;
 }
 
 @media (min-width: $width-desktop) {
   .m-lg-0{
-    margin: 0 !important;
+    margin: $pixel-0 !important;
   }
   .m-lg-1{
-    margin: 8px !important;
+    margin: $pixel-1 !important;
   }
   .m-lg-2{
-    margin: 16px !important;
+    margin: $pixel-2 !important;
   }
   .m-lg-3{
-    margin: 24px !important;
+    margin: $pixel-3 !important;
   }
   .m-lg-4{
-    margin: 32px !important;
+    margin: $pixel-4 !important;
   }
 
   .my-lg-0{
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+    margin-top: $pixel-0 !important;
+    margin-bottom: $pixel-0 !important;
   }
   .my-lg-1{
-    margin-top: 8px !important;
-    margin-bottom: 8px !important;
+    margin-top: $pixel-1 !important;
+    margin-bottom: $pixel-1 !important;
   }
   .my-lg-2{
-    margin-top: 16px !important;
-    margin-bottom: 16px !important;
+    margin-top: $pixel-2 !important;
+    margin-bottom: $pixel-2 !important;
   }
   .my-lg-3{
-    margin-top: 24px !important;
-    margin-bottom: 24px !important;
+    margin-top: $pixel-3 !important;
+    margin-bottom: $pixel-3 !important;
   }
   .my-lg-4{
-    margin-top: 32px !important;
-    margin-bottom: 32px !important;
+    margin-top: $pixel-4 !important;
+    margin-bottom: $pixel-4 !important;
   }
   .mx-lg-0{
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: $pixel-0 !important;
+    margin-right: $pixel-0 !important;
   }
   .mx-lg-1{
-    margin-left: 8px !important;
-    margin-right: 8px !important;
+    margin-left: $pixel-1 !important;
+    margin-right: $pixel-1 !important;
   }
   .mx-lg-2{
-    margin-left: 16px !important;
-    margin-right: 16px !important;
+    margin-left: $pixel-2 !important;
+    margin-right: $pixel-2 !important;
   }
   .mx-lg-3{
-    margin-left: 24px !important;
-    margin-right: 24px !important;
+    margin-left: $pixel-3 !important;
+    margin-right: $pixel-3 !important;
   }
   .mx-lg-4{
-    margin-left: 32px !important;
-    margin-right: 32px !important;
+    margin-left: $pixel-4 !important;
+    margin-right: $pixel-4 !important;
   }
 
   .mt-lg-0{
-    margin-top: 0 !important;
+    margin-top: $pixel-0 !important;
   }
   .mt-lg-1{
-    margin-top: 8px !important;
+    margin-top: $pixel-1 !important;
   }
   .mt-lg-2{
-    margin-top: 16px !important;
+    margin-top: $pixel-2 !important;
   }
   .mt-lg-3{
-    margin-top: 24px !important;
+    margin-top: $pixel-3 !important;
   }
   .mt-lg-4{
-    margin-top: 32px !important;
+    margin-top: $pixel-4 !important;
   }
   .mb-lg-0{
-    margin-bottom: 0 !important;
+    margin-bottom: $pixel-0 !important;
   }
   .mb-lg-1{
-    margin-bottom: 8px !important;
+    margin-bottom: $pixel-1 !important;
   }
   .mb-lg-2{
-    margin-bottom: 16px !important;
+    margin-bottom: $pixel-2 !important;
   }
   .mb-lg-3{
-    margin-bottom: 24px !important;
+    margin-bottom: $pixel-3 !important;
   }
   .mb-lg-4{
-    margin-bottom: 32px !important;
+    margin-bottom: $pixel-4 !important;
   }
   .ml-lg-0{
-    margin-left: 0 !important;
+    margin-left: $pixel-0 !important;
   }
   .ml-lg-1{
-    margin-left: 8px !important;
+    margin-left: $pixel-1 !important;
   }
   .ml-lg-2{
-    margin-left: 16px !important;
+    margin-left: $pixel-2 !important;
   }
   .ml-lg-3{
-    margin-left: 24px !important;
+    margin-left: $pixel-3 !important;
   }
   .ml-lg-4{
-    margin-left: 32px !important;
+    margin-left: $pixel-4 !important;
   }
   .mr-lg-0{
-    margin-right: 0 !important;
+    margin-right: $pixel-0 !important;
   }
   .mr-lg-1{
-    margin-right: 8px !important;
+    margin-right: $pixel-1 !important;
   }
   .mr-lg-2{
-    margin-right: 16px !important;
+    margin-right: $pixel-2 !important;
   }
   .mr-lg-3{
-    margin-right: 24px !important;
+    margin-right: $pixel-3 !important;
   }
   .mr-lg-4{
-    margin-right: 32px !important;
+    margin-right: $pixel-4 !important;
   }
 }
 
 @media (max-width: $width-desktop) {
   .m-sm-0{
-    margin: 0 !important;
+    margin: $pixel-0 !important;
   }
   .m-sm-1{
-    margin: 8px !important;
+    margin: $pixel-1 !important;
   }
   .m-sm-2{
-    margin: 16px !important;
+    margin: $pixel-2 !important;
   }
   .m-sm-3{
-    margin: 24px !important;
+    margin: $pixel-3 !important;
   }
   .m-sm-4{
-    margin: 32px !important;
+    margin: $pixel-4 !important;
   }
 
   .my-sm-0{
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+    margin-top: $pixel-0 !important;
+    margin-bottom: $pixel-0 !important;
   }
   .my-sm-1{
-    margin-top: 8px !important;
-    margin-bottom: 8px !important;
+    margin-top: $pixel-1 !important;
+    margin-bottom: $pixel-1 !important;
   }
   .my-sm-2{
-    margin-top: 16px !important;
-    margin-bottom: 16px !important;
+    margin-top: $pixel-2 !important;
+    margin-bottom: $pixel-2 !important;
   }
   .my-sm-3{
-    margin-top: 24px !important;
-    margin-bottom: 24px !important;
+    margin-top: $pixel-3 !important;
+    margin-bottom: $pixel-3 !important;
   }
   .my-sm-4{
-    margin-top: 32px !important;
-    margin-bottom: 32px !important;
+    margin-top: $pixel-4 !important;
+    margin-bottom: $pixel-4 !important;
   }
   .mx-sm-0{
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: $pixel-0 !important;
+    margin-right: $pixel-0 !important;
   }
   .mx-sm-1{
-    margin-left: 8px !important;
-    margin-right: 8px !important;
+    margin-left: $pixel-1 !important;
+    margin-right: $pixel-1 !important;
   }
   .mx-sm-2{
-    margin-left: 16px !important;
-    margin-right: 16px !important;
+    margin-left: $pixel-2 !important;
+    margin-right: $pixel-2 !important;
   }
   .mx-sm-3{
-    margin-left: 24px !important;
-    margin-right: 24px !important;
+    margin-left: $pixel-3 !important;
+    margin-right: $pixel-3 !important;
   }
   .mx-sm-4{
-    margin-left: 32px !important;
-    margin-right: 32px !important;
+    margin-left: $pixel-4 !important;
+    margin-right: $pixel-4 !important;
   }
 
   .mt-sm-0{
-    margin-top: 0 !important;
+    margin-top: $pixel-0 !important;
   }
   .mt-sm-1{
-    margin-top: 8px !important;
+    margin-top: $pixel-1 !important;
   }
   .mt-sm-2{
-    margin-top: 16px !important;
+    margin-top: $pixel-2 !important;
   }
   .mt-sm-3{
-    margin-top: 24px !important;
+    margin-top: $pixel-3 !important;
   }
   .mt-sm-4{
-    margin-top: 32px !important;
+    margin-top: $pixel-4 !important;
   }
   .mb-sm-0{
-    margin-bottom: 0 !important;
+    margin-bottom: $pixel-0 !important;
   }
   .mb-sm-1{
-    margin-bottom: 8px !important;
+    margin-bottom: $pixel-1 !important;
   }
   .mb-sm-2{
-    margin-bottom: 16px !important;
+    margin-bottom: $pixel-2 !important;
   }
   .mb-sm-3{
-    margin-bottom: 24px !important;
+    margin-bottom: $pixel-3 !important;
   }
   .mb-sm-4{
-    margin-bottom: 32px !important;
+    margin-bottom: $pixel-4 !important;
   }
   .ml-sm-0{
-    margin-left: 0 !important;
+    margin-left: $pixel-0 !important;
   }
   .ml-sm-1{
-    margin-left: 8px !important;
+    margin-left: $pixel-1 !important;
   }
   .ml-sm-2{
-    margin-left: 16px !important;
+    margin-left: $pixel-2 !important;
   }
   .ml-sm-3{
-    margin-left: 24px !important;
+    margin-left: $pixel-3 !important;
   }
   .ml-sm-4{
-    margin-left: 32px !important;
+    margin-left: $pixel-4 !important;
   }
   .mr-sm-0{
-    margin-right: 0 !important;
+    margin-right: $pixel-0 !important;
   }
   .mr-sm-1{
-    margin-right: 8px !important;
+    margin-right: $pixel-1 !important;
   }
   .mr-sm-2{
-    margin-right: 16px !important;
+    margin-right: $pixel-2 !important;
   }
   .mr-sm-3{
-    margin-right: 24px !important;
+    margin-right: $pixel-3 !important;
   }
   .mr-sm-4{
-    margin-right: 32px !important;
+    margin-right: $pixel-4 !important;
   }
 }
