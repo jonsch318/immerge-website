@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, Input, Output } from "@angular/core";
+import { Component, EventEmitter, Output } from "@angular/core";
 import { BehaviorSubject } from "rxjs";
 
 @Component({

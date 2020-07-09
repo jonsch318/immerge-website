@@ -2,13 +2,12 @@ import {
   Component,
   ElementRef,
   EventEmitter,
-  Input,
   OnDestroy,
   OnInit,
   Output,
   ViewChild,
 } from "@angular/core";
-import { Observable, Subscription } from "rxjs";
+import { Subscription } from "rxjs";
 import { NavigationEnd, Router } from "@angular/router";
 
 @Component({
@@ -41,5 +40,9 @@ export class HeaderMenuSmallComponent implements OnInit, OnDestroy {
 
   handleContainerClick($event: MouseEvent): void {
     if ($event.target === this.containerRef.nativeElement) this.close.emit();
+  }
+
+  handleSwipeUp(): void {
+    this.close.emit();
   }
 }
