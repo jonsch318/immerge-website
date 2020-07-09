@@ -10,11 +10,11 @@ export class ProjectsSmall {
   open: boolean;
   icon: BehaviorSubject<string> = new BehaviorSubject<string>("keyboard_arrow_down");
 
-  handleClick() {
+  handleClick(): void {
     this._setState(!this.open);
   }
 
-  private _setState(state: boolean) {
+  private _setState(state: boolean): void {
     if (state === this.open) {
       return;
     }

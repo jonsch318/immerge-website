@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Output, ViewChild } from "@angular/core";
 import { BehaviorSubject } from "rxjs";
 import { HeaderMenuSmallComponent } from "../header-menu-sm/header-menu-sm";
-import { menuAnimations } from "./header-menu-sm-animations";
+import { menuAnimations } from "./hamburger-menu-animations";
 
 @Component({
   selector: "nav-hamburger",
