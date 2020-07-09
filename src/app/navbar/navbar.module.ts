@@ -14,7 +14,8 @@ import { HeaderMenuLargeComponent } from "./containers/header-menu-lg/header-men
 import { MatDividerModule } from "@angular/material/divider";
 import { DragDropModule } from "@angular/cdk/drag-drop";
 import { DropdownSmall } from "./components/dropdown-sm/dropdown-sm";
-import { ProjectsSmall } from "./components/projects-sm/projects-sm";
+import { ProjectsSmall } from "./dropdowns/projects/projects-sm";
+import { MatRippleModule } from "@angular/material/core";
 
 @NgModule({
   imports: [
@@ -26,6 +27,7 @@ import { ProjectsSmall } from "./components/projects-sm/projects-sm";
     MatIconModule,
     MatDividerModule,
     DragDropModule,
+    MatRippleModule,
   ],
   declarations: [
     MainNavbar,

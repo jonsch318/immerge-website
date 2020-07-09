@@ -1,21 +1,23 @@
 <div
-  class="d-block header-menu-container w-100"
+  class="d-block header-menu-container"
   #container
   (click)="handleContainerClick($event)"
   (swipeup)="handleSwipeUp()"
 >
-  <nav class="d-block header-menu-nav d-block w-100">
-    <nav-project-small class="px-1"></nav-project-small>
+  <nav class="d-block header-menu-nav d-block">
+    <nav-project-small class="d-block"></nav-project-small>
     <mat-divider class="divider"></mat-divider>
     <a
-      class="m-0 py-1 header-menu-item mat-subheader-1 text-decoration-none"
+      class="m-0 py-1 px-3 header-menu-item mat-subheader-1 text-decoration-none"
       routerLink="/about"
+      matRipple
       >About us</a
     >
     <mat-divider class="divider"></mat-divider>
     <a
-      class="m-0 py-1 header-menu-item mat-subheader-1 text-decoration-none"
+      class="m-0 py-1 px-3 header-menu-item mat-subheader-1 text-decoration-none"
       routerLink="/contact"
+      matRipple
       >Contact</a
     >
     <mat-divider class="divider"></mat-divider>

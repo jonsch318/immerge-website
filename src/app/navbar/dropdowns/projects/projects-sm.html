@@ -1,0 +1,11 @@
+<div
+  class="header-menu-item py-1 px-3 mat-subheading-1 m-0"
+  (click)="handleClick()"
+  matRipple
+>
+  <h4 class="dropdown-trigger mat-subheading-1 m-0">Projects</h4>
+  <mat-icon>{{icon | async}}</mat-icon>
+</div>
+<div class="dropdown-content px-4 py-1 mat-body-1" *ngIf="open">
+  <a class="dropdown-item text-decoration-none" routerLink="/">Context</a>
+</div>
