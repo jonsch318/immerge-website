@@ -6,6 +6,8 @@
   <h4 class="dropdown-trigger mat-subheading-1 m-0">Projects</h4>
   <mat-icon>{{icon | async}}</mat-icon>
 </div>
-<div class="dropdown-content px-4 py-1 mat-body-1" *ngIf="open">
-  <a class="dropdown-item text-decoration-none" routerLink="/">Context</a>
+<div class="dropdown-content mat-body-1" *ngIf="open">
+  <nav-link class="px-4 py-1 dropdown-item" exRouterLink="/projects/context" matRipple
+    >Context</nav-link
+  >
 </div>

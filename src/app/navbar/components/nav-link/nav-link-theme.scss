@@ -1,10 +1,10 @@
 @import "~@angular/material/theming";
+@import "../../../../theming";
 
-@mixin im-navbar-header-menu-lg-theme($theme){
-  $primary: map_get($theme, primary);
+@mixin im-navbar-nav-link-theme($theme){
   $foreground: map_get($theme, foreground);
 
-  .header-menu-item{
+  .header-nav-link{
     color: mat-color($foreground, text);
   }
 }

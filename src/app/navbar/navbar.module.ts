@@ -16,6 +16,7 @@ import { DragDropModule } from "@angular/cdk/drag-drop";
 import { DropdownSmall } from "./components/dropdown-sm/dropdown-sm";
 import { ProjectsSmall } from "./dropdowns/projects/projects-sm";
 import { MatRippleModule } from "@angular/material/core";
+import { NavLinkComponent } from "./components/nav-link/nav-link";
 
 @NgModule({
   imports: [
@@ -38,6 +39,7 @@ import { MatRippleModule } from "@angular/material/core";
     HeaderMenuLargeComponent,
     DropdownSmall,
     ProjectsSmall,
+    NavLinkComponent,
   ],
   exports: [MainNavbar],
 })
