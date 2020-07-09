@@ -1,4 +1,5 @@
 import {
+  AfterViewInit,
   Component,
   ElementRef,
   EventEmitter,
@@ -17,6 +18,7 @@ import { NavigationEnd, Router } from "@angular/router";
 })
 export class HeaderMenuSmallComponent implements OnInit, OnDestroy {
   private routerSubscription = Subscription.EMPTY;
+  _panelAnimationState: "void" | "enter" = "void";
 
   @Output()
   public close: EventEmitter<boolean> = new EventEmitter<boolean>();

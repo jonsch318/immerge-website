@@ -1,17 +1,24 @@
-import { Component, EventEmitter, Output } from "@angular/core";
+import { Component, EventEmitter, Output, ViewChild } from "@angular/core";
 import { BehaviorSubject } from "rxjs";
+import { HeaderMenuSmallComponent } from "../header-menu-sm/header-menu-sm";
+import { menuAnimations } from "./header-menu-sm-animations";
 
 @Component({
   selector: "nav-hamburger",
   templateUrl: "./hamburger.html",
   styleUrls: ["./hamburger.scss"],
+  animations: [menuAnimations.transformMenu],
 })
 export class HamburgerComponent {
   open = false;
   icon: BehaviorSubject<string> = new BehaviorSubject<string>("menu");
+  _animationState: "void" | "enter" = "void";
 
   @Output()
   menuState: EventEmitter<boolean> = new EventEmitter<boolean>();
+
+  @ViewChild("menu", { static: false })
+  menu: HeaderMenuSmallComponent;
 
   constructor() {}
 

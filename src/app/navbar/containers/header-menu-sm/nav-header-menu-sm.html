@@ -1,13 +1,23 @@
-<div class="d-block header-menu-container w-100" #container (click)="handleContainerClick($event)" (swipeup)="handleSwipeUp()">
+<div
+  class="d-block header-menu-container w-100"
+  #container
+  (click)="handleContainerClick($event)"
+  (swipeup)="handleSwipeUp()"
+>
   <nav class="d-block header-menu-nav d-block w-100">
-    <div class="header-menu-item dropdown py-1">
-      <span class="m-0 header-menu-link mat-subheading-1 text-decoration-none">Projects</span>
-      <mat-icon class="d-flex">keyboard_arrow_down</mat-icon>
-    </div>
+    <nav-project-small class="px-1"></nav-project-small>
     <mat-divider class="divider"></mat-divider>
-    <a class="m-0 py-1 header-menu-item mat-subheader-1 text-decoration-none" routerLink="/about">About us</a>
+    <a
+      class="m-0 py-1 header-menu-item mat-subheader-1 text-decoration-none"
+      routerLink="/about"
+      >About us</a
+    >
     <mat-divider class="divider"></mat-divider>
-    <a class="m-0 py-1 header-menu-item mat-subheader-1 text-decoration-none" routerLink="/contact">Contact</a>
+    <a
+      class="m-0 py-1 header-menu-item mat-subheader-1 text-decoration-none"
+      routerLink="/contact"
+      >Contact</a
+    >
     <mat-divider class="divider"></mat-divider>
   </nav>
 </div>

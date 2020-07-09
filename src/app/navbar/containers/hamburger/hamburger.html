@@ -1,7 +1,11 @@
 <div class="header-menu-sm-control">
-  <button mat-icon-button (click)="handleClick()" >
+  <button mat-icon-button (click)="handleClick()">
     <mat-icon>{{icon | async}}</mat-icon>
   </button>
 </div>
-<nav-header-menu-sm class="d-lg-none d-flex position-fixed right-0 left-0 bottom-0 header-menu-sm" *ngIf="open" (close)="closeMenu()"></nav-header-menu-sm>
-
+<nav-header-menu-sm
+  class="d-lg-none d-flex position-fixed right-0 left-0 bottom-0 header-menu-sm"
+  *ngIf="open"
+  (close)="closeMenu()"
+  @transformMenu
+></nav-header-menu-sm>
