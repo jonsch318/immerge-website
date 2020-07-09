@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, Input, Output } from "@angular/core";
+import { Component, EventEmitter, Output } from "@angular/core";
 import { BehaviorSubject } from "rxjs";
 
 @Component({
@@ -16,12 +16,19 @@ export class HamburgerComponent {
   constructor() {}
 
   handleClick(): void {
-    this.open = !this.open;
-    this.menuState.emit(this.open);
-    this.getIcon();
+    this._setMenuState(!this.open);
   }
 
   getIcon(): void {
     this.icon.next(this.open ? "close" : "menu");
+  }
+  closeMenu(): void {
+    this._setMenuState(false);
+  }
+
+  private _setMenuState(state: boolean): void {
+    this.open = state;
+    this.menuState.emit(this.open);
+    this.getIcon();
   }
 }

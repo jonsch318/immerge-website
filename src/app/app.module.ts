@@ -1,5 +1,5 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+import { BrowserModule, HammerModule } from "@angular/platform-browser";
+import { Injectable, NgModule } from "@angular/core";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { CoreModule } from "./core/core.module";
@@ -9,6 +9,19 @@ import { SharedModule } from "./shared/shared.module";
 import { NavbarModule } from "./navbar/navbar.module";
 import { MatMenuModule } from "@angular/material/menu";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
+import * as Hammer from "hammerjs";
+import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from "@angular/platform-browser";
+
+// custom configuration Hammerjs
+@Injectable()
+export class HammerConfig extends HammerGestureConfig {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  overrides = <any>{
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment,@typescript-eslint/no-unsafe-member-access
+    swipe: { direction: Hammer.DIRECTION_ALL },
+  };
+}
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,9 +33,15 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     SharedModule,
     NavbarModule,
     MatMenuModule,
+    HammerModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: HammerConfig,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
