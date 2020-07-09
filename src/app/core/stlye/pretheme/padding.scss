@@ -1,288 +1,358 @@
 @import "../../../../theming";
+@import "../pretheme-config";
 
 //Padding 0=0,1=8,2=16,3=32
 .p-0{
   padding: 0 !important;
 }
 .p-1{
-  padding: 8px !important;
+  padding: $pixel-1 !important;
 }
 .p-2{
-  padding: 16px !important;
+  padding: $pixel-2 !important;
 }
 .p-3{
-  padding: 32px !important;
+  padding: $pixel-3 !important;
+}
+.p-4{
+  padding: $pixel-4 !important;
 }
 .py-0{
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  padding-top: $pixel-0 !important;
+  padding-bottom: $pixel-0 !important;
 }
 .py-1{
-  padding-top: 8px !important;
-  padding-bottom: 8px !important;
+  padding-top: $pixel-1 !important;
+  padding-bottom: $pixel-1 !important;
 }
 .py-2{
-  padding-top: 16px !important;
-  padding-bottom: 16px !important;
+  padding-top: $pixel-2 !important;
+  padding-bottom: $pixel-2 !important;
 }
 .py-3{
-  padding-top: 32px !important;
-  padding-bottom: 32px !important;
+  padding-top: $pixel-3 !important;
+  padding-bottom: $pixel-3 !important;
+}
+.py-4{
+  padding-top: $pixel-4 !important;
+  padding-bottom: $pixel-4 !important;
 }
 .px-0{
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-left: $pixel-0 !important;
+  padding-right: $pixel-0 !important;
 }
 .px-1{
-  padding-left: 8px !important;
-  padding-right: 8px !important;
+  padding-left: $pixel-1 !important;
+  padding-right: $pixel-1 !important;
 }
 .px-2{
-  padding-left: 16px !important;
-  padding-right: 16px !important;
+  padding-left: $pixel-2 !important;
+  padding-right: $pixel-2 !important;
 }
 .px-3{
-  padding-left: 32px !important;
-  padding-right: 32px !important;
+  padding-left: $pixel-3 !important;
+  padding-right: $pixel-3 !important;
+}
+.px-4{
+  padding-left: $pixel-4 !important;
+  padding-right: $pixel-4 !important;
 }
 
 .pt-0{
-  padding-top: 0 !important;
+  padding-top: $pixel-0 !important;
 }
 .pt-1{
-  padding-top: 8px !important;
+  padding-top: $pixel-1 !important;
 }
 .pt-2{
-  padding-top: 16px !important;
+  padding-top: $pixel-2 !important;
 }
 .pt-3{
-  padding-top: 32px !important;
+  padding-top: $pixel-3 !important;
+}
+.pt-4{
+  padding-top: $pixel-4 !important;
 }
 .pb-0{
-  padding-bottom: 0 !important;
+  padding-bottom: $pixel-0 !important;
 }
 .pb-1{
-  padding-bottom: 8px !important;
+  padding-bottom: $pixel-1 !important;
 }
 .pb-2{
-  padding-bottom: 16px !important;
+  padding-bottom: $pixel-2 !important;
 }
 .pb-3{
-  padding-bottom: 32px !important;
+  padding-bottom: $pixel-3 !important;
+}
+.pb-4{
+  padding-bottom: $pixel-4 !important;
 }
 .pl-0{
-  padding-left: 0 !important;
+  padding-left: $pixel-0 !important;
 }
 .pl-1{
-  padding-left: 8px !important;
+  padding-left: $pixel-1 !important;
 }
 .pl-2{
-  padding-left: 16px !important;
+  padding-left: $pixel-2 !important;
 }
 .pl-3{
-  padding-left: 32px !important;
+  padding-left: $pixel-3 !important;
+}
+.pl-4{
+  padding-left: $pixel-4 !important;
 }
 .pr-0{
-  padding-right: 0 !important;
+  padding-right: $pixel-0 !important;
 }
 .pr-1{
-  padding-right: 8px !important;
+  padding-right: $pixel-1 !important;
 }
 .pr-2{
-  padding-right: 16px !important;
+  padding-right: $pixel-2 !important;
 }
 .pr-3{
-  padding-right: 32px !important;
+  padding-right: $pixel-3 !important;
+}
+.pr-4{
+  padding-right: $pixel-4 !important;
 }
 
 @media (min-width: $width-desktop) {
   .p-lg-0{
-    padding: 0 !important;
+    padding: $pixel-0 !important;
   }
   .p-lg-1{
-    padding: 8px !important;
+    padding: $pixel-1 !important;
   }
   .p-lg-2{
-    padding: 16px !important;
+    padding: $pixel-2 !important;
   }
   .p-lg-3{
-    padding: 32px !important;
+    padding: $pixel-3 !important;
+  }
+  .p-lg-4{
+    padding: $pixel-4 !important;
   }
   .py-lg-0{
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-top: $pixel-0 !important;
+    padding-bottom: $pixel-0 !important;
   }
   .py-lg-1{
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
+    padding-top: $pixel-1 !important;
+    padding-bottom: $pixel-1 !important;
   }
   .py-lg-2{
-    padding-top: 16px !important;
-    padding-bottom: 16px !important;
+    padding-top: $pixel-2 !important;
+    padding-bottom: $pixel-2 !important;
   }
   .py-lg-3{
-    padding-top: 32px !important;
-    padding-bottom: 32px !important;
+    padding-top: $pixel-3 !important;
+    padding-bottom: $pixel-3 !important;
+  }
+  .py-lg-4{
+    padding-top: $pixel-4 !important;
+    padding-bottom: $pixel-4 !important;
   }
   .px-lg-0{
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: $pixel-0 !important;
+    padding-right: $pixel-0 !important;
   }
   .px-lg-1{
-    padding-left: 8px !important;
-    padding-right: 8px !important;
+    padding-left: $pixel-1 !important;
+    padding-right: $pixel-1 !important;
   }
   .px-lg-2{
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    padding-left: $pixel-2 !important;
+    padding-right: $pixel-2 !important;
   }
   .px-lg-3{
-    padding-left: 32px !important;
-    padding-right: 32px !important;
+    padding-left: $pixel-3 !important;
+    padding-right: $pixel-3 !important;
+  }
+  .px-lg-4{
+    padding-left: $pixel-4 !important;
+    padding-right: $pixel-4 !important;
   }
 
   .pt-lg-0{
-    padding-top: 0 !important;
+    padding-top: $pixel-0 !important;
   }
   .pt-lg-1{
-    padding-top: 8px !important;
+    padding-top: $pixel-1 !important;
   }
   .pt-lg-2{
-    padding-top: 16px !important;
+    padding-top: $pixel-2 !important;
   }
   .pt-lg-3{
-    padding-top: 32px !important;
+    padding-top: $pixel-3 !important;
+  }
+  .pt-lg-4{
+    padding-top: $pixel-4 !important;
   }
   .pb-lg-0{
-    padding-bottom: 0 !important;
+    padding-bottom: $pixel-0 !important;
   }
   .pb-lg-1{
-    padding-bottom: 8px !important;
+    padding-bottom: $pixel-1 !important;
   }
   .pb-lg-2{
-    padding-bottom: 16px !important;
+    padding-bottom: $pixel-2 !important;
   }
   .pb-lg-3{
-    padding-bottom: 32px !important;
+    padding-bottom: $pixel-3 !important;
+  }
+  .pb-lg-4{
+    padding-bottom: $pixel-4 !important;
   }
   .pl-lg-0{
-    padding-left: 0 !important;
+    padding-left: $pixel-0 !important;
   }
   .pl-lg-1{
-    padding-left: 8px !important;
+    padding-left: $pixel-1 !important;
   }
   .pl-lg-2{
-    padding-left: 16px !important;
+    padding-left: $pixel-2 !important;
   }
   .pl-lg-3{
-    padding-left: 32px !important;
+    padding-left: $pixel-3 !important;
+  }
+  .pl-lg-4{
+    padding-left: $pixel-4 !important;
   }
   .pr-lg-0{
-    padding-right: 0 !important;
+    padding-right: $pixel-0 !important;
   }
   .pr-lg-1{
-    padding-right: 8px !important;
+    padding-right: $pixel-1 !important;
   }
   .pr-lg-2{
-    padding-right: 16px !important;
+    padding-right: $pixel-2 !important;
   }
   .pr-lg-3{
-    padding-right: 32px !important;
+    padding-right: $pixel-3 !important;
+  }
+  .pr-lg-4{
+    padding-right: $pixel-4 !important;
   }
 }
 
 @media (max-width: $width-desktop) {
-  .p-sm--0{
-    padding: 0 !important;
+  .p-sm-0{
+    padding: $pixel-0 !important;
   }
-  .p-sm--1{
-    padding: 8px !important;
+  .p-sm-1{
+    padding: $pixel-1 !important;
   }
-  .p-sm--2{
-    padding: 16px !important;
+  .p-sm-2{
+    padding: $pixel-2 !important;
   }
-  .p-sm--3{
-    padding: 32px !important;
+  .p-sm-3{
+    padding: $pixel-3 !important;
   }
-  .py-sm--0{
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+  .p-sm-4{
+    padding: $pixel-4 !important;
   }
-  .py-sm--1{
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
+  .py-sm-0{
+    padding-top: $pixel-0 !important;
+    padding-bottom: $pixel-0 !important;
   }
-  .py-sm--2{
-    padding-top: 16px !important;
-    padding-bottom: 16px !important;
+  .py-sm-1{
+    padding-top: $pixel-1 !important;
+    padding-bottom: $pixel-1 !important;
   }
-  .py-sm--3{
-    padding-top: 32px !important;
-    padding-bottom: 32px !important;
+  .py-sm-2{
+    padding-top: $pixel-2 !important;
+    padding-bottom: $pixel-2 !important;
   }
-  .px-sm--0{
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+  .py-sm-3{
+    padding-top: $pixel-3 !important;
+    padding-bottom: $pixel-3 !important;
   }
-  .px-sm--1{
-    padding-left: 8px !important;
-    padding-right: 8px !important;
+  .py-sm-4{
+    padding-top: $pixel-4 !important;
+    padding-bottom: $pixel-4 !important;
   }
-  .px-sm--2{
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+  .px-sm-0{
+    padding-left: $pixel-0 !important;
+    padding-right: $pixel-0 !important;
   }
-  .px-sm--3{
-    padding-left: 32px !important;
-    padding-right: 32px !important;
+  .px-sm-1{
+    padding-left: $pixel-1 !important;
+    padding-right: $pixel-1 !important;
+  }
+  .px-sm-2{
+    padding-left: $pixel-2 !important;
+    padding-right: $pixel-2 !important;
+  }
+  .px-sm-3{
+    padding-left: $pixel-3 !important;
+    padding-right: $pixel-3 !important;
+  }
+  .px-sm-4{
+    padding-left: $pixel-4 !important;
+    padding-right: $pixel-4 !important;
   }
 
-  .pt-sm--0{
-    padding-top: 0 !important;
+  .pt-sm-0{
+    padding-top: $pixel-0 !important;
   }
-  .pt-sm--1{
-    padding-top: 8px !important;
+  .pt-sm-1{
+    padding-top: $pixel-1 !important;
   }
-  .pt-sm--2{
-    padding-top: 16px !important;
+  .pt-sm-2{
+    padding-top: $pixel-2 !important;
   }
-  .pt-sm--3{
-    padding-top: 32px !important;
+  .pt-sm-3{
+    padding-top: $pixel-3 !important;
   }
-  .pb-sm--0{
-    padding-bottom: 0 !important;
+  .pt-sm-4{
+    padding-top: $pixel-4 !important;
   }
-  .pb-sm--1{
-    padding-bottom: 8px !important;
+  .pb-sm-0{
+    padding-bottom: $pixel-0 !important;
   }
-  .pb-sm--2{
-    padding-bottom: 16px !important;
+  .pb-sm-1{
+    padding-bottom: $pixel-1 !important;
   }
-  .pb-sm--3{
-    padding-bottom: 32px !important;
+  .pb-sm-2{
+    padding-bottom: $pixel-2 !important;
   }
-  .pl-sm--0{
-    padding-left: 0 !important;
+  .pb-sm-3{
+    padding-bottom: $pixel-3 !important;
   }
-  .pl-sm--1{
-    padding-left: 8px !important;
+  .pb-sm-4{
+    padding-bottom: $pixel-4 !important;
   }
-  .pl-sm--2{
-    padding-left: 16px !important;
+  .pl-sm-0{
+    padding-left: $pixel-0 !important;
   }
-  .pl-sm--3{
-    padding-left: 32px !important;
+  .pl-sm-1{
+    padding-left: $pixel-1 !important;
   }
-  .pr-sm--0{
-    padding-right: 0 !important;
+  .pl-sm-2{
+    padding-left: $pixel-2 !important;
   }
-  .pr-sm--1{
-    padding-right: 8px !important;
+  .pl-sm-3{
+    padding-left: $pixel-3 !important;
   }
-  .pr-sm--2{
-    padding-right: 16px !important;
+  .pl-sm-4{
+    padding-left: $pixel-4 !important;
   }
-  .pr-sm--3{
-    padding-right: 32px !important;
+  .pr-sm-0{
+    padding-right: $pixel-0 !important;
+  }
+  .pr-sm-1{
+    padding-right: $pixel-1 !important;
+  }
+  .pr-sm-2{
+    padding-right: $pixel-2 !important;
+  }
+  .pr-sm-3{
+    padding-right: $pixel-3 !important;
+  }
+  .pr-sm-4{
+    padding-right: $pixel-4 !important;
   }
 }

@@ -1,15 +1,10 @@
 @import "header-menu-sm-theme";
-.w-100{
-  width: 100%;
+
+.header-menu-container{
+  width: 300px;
 }
 .header-menu-item{
-  padding-top: 8px;
-  width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-
-  &.dropdown{
-    cursor: pointer;
-  }
+  height: 40px;
 }

@@ -1,13 +1,15 @@
-<div class="d-block header-menu-container w-100" #container (click)="handleContainerClick($event)" (swipeup)="handleSwipeUp()">
-  <nav class="d-block header-menu-nav d-block w-100">
-    <div class="header-menu-item dropdown py-1">
-      <span class="m-0 header-menu-link mat-subheading-1 text-decoration-none">Projects</span>
-      <mat-icon class="d-flex">keyboard_arrow_down</mat-icon>
-    </div>
+<div
+  class="d-block header-menu-container"
+  #container
+  (click)="handleContainerClick($event)"
+  (swipeup)="handleSwipeUp()"
+>
+  <nav class="d-block header-menu-nav d-block">
+    <nav-project-small class="d-block"></nav-project-small>
     <mat-divider class="divider"></mat-divider>
-    <a class="m-0 py-1 header-menu-item mat-subheader-1 text-decoration-none" routerLink="/about">About us</a>
+    <nav-link class="py-1 px-3" exRouterLink="/about" matRipple>About us</nav-link>
     <mat-divider class="divider"></mat-divider>
-    <a class="m-0 py-1 header-menu-item mat-subheader-1 text-decoration-none" routerLink="/contact">Contact</a>
+    <nav-link class="py-1 px-3" exRouterLink="/contact" matRipple>Contact</nav-link>
     <mat-divider class="divider"></mat-divider>
   </nav>
 </div>
