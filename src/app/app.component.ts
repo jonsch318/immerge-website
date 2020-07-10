@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from "@angular/core";
 import { ActivatedRoute, NavigationEnd, Router } from "@angular/router";
 import { Subscription } from "rxjs";
-import { filter, map, mergeMap } from "rxjs/operators";
+import { filter, map } from "rxjs/operators";
 import { Title } from "@angular/platform-browser";
 
 @Component({
@@ -29,7 +29,7 @@ export class AppComponent implements OnInit, OnDestroy {
             child = child.firstChild;
           }
           if (child.snapshot.data["title"]) {
-            return child.snapshot.data["title"] + " - Immerge";
+            return `${child.snapshot.data["title"] as string} - Immerge`;
           }
           return appTitle;
         }),
@@ -39,7 +39,7 @@ export class AppComponent implements OnInit, OnDestroy {
       });
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     this._routerSubscription.unsubscribe();
   }
 }
