@@ -1,8 +1,8 @@
 import { Component, OnDestroy, OnInit } from "@angular/core";
+import { Title } from "@angular/platform-browser";
 import { ActivatedRoute, NavigationEnd, Router } from "@angular/router";
 import { Subscription } from "rxjs";
 import { filter, map } from "rxjs/operators";
-import { Title } from "@angular/platform-browser";
 
 @Component({
   selector: "app-root",

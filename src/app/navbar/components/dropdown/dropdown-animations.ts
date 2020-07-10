@@ -1,12 +1,12 @@
 import {
-  trigger,
+  animate,
+  AnimationTriggerMetadata,
+  group,
+  query,
   state,
   style,
-  animate,
   transition,
-  query,
-  group,
-  AnimationTriggerMetadata,
+  trigger,
 } from "@angular/animations";
 
 export const matMenuAnimations: {

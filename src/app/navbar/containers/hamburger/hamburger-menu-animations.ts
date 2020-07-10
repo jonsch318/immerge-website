@@ -1,9 +1,9 @@
 import {
-  trigger,
-  style,
   animate,
-  transition,
   AnimationTriggerMetadata,
+  style,
+  transition,
+  trigger,
 } from "@angular/animations";
 
 export const menuAnimations: {

@@ -6,7 +6,7 @@ import {
   InjectionToken,
   NgZone,
 } from "@angular/core";
-import { MAT_MENU_PANEL, MatMenu, MatMenuDefaultOptions } from "@angular/material/menu";
+import { MatMenu, MatMenuDefaultOptions, MAT_MENU_PANEL } from "@angular/material/menu";
 import { matMenuAnimations } from "./dropdown-animations";
 
 /** Injection token to be used to override the default options for `mat-menu`. */
@@ -45,6 +45,5 @@ export class DropdownComponent extends MatMenu {
     @Inject(MAT_MENU_DEFAULT_OPTIONS) defaultOptions: MatMenuDefaultOptions,
   ) {
     super(elementRef, ngZone, defaultOptions);
-    this.setElevation();
   }
 }

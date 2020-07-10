@@ -7,8 +7,8 @@ import {
   Output,
   ViewChild,
 } from "@angular/core";
-import { Subscription } from "rxjs";
 import { NavigationEnd, Router } from "@angular/router";
+import { Subscription } from "rxjs";
 
 @Component({
   selector: "nav-header-menu-sm",
