@@ -1,6 +1,17 @@
 @import "../../../../theming";
 @import "./nav-link-theme";
+@import "../../nav-config";
 
 :host{
   cursor: pointer;
+}
+
+@media (min-width: $width-desktop) {
+  .header-nav-link {
+    opacity: 0.9;
+
+    &:hover{
+      opacity: 1;
+    }
+  }
 }

@@ -9,6 +9,6 @@ import { Component, Input } from "@angular/core";
   },
 })
 export class NavLinkComponent {
-  @Input("exRouterLink")
+  @Input("routerLink")
   routerLink: any[] | string | undefined | null;
 }

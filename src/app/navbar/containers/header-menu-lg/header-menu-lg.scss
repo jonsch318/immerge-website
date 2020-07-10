@@ -2,6 +2,7 @@
 @import "../../../../theming";
 @import "./header-menu-lg-theme";
 
-.header-menu-item{
-  margin-right: 16px;
+.nav-main-link{
+  height: $nav-height;
+  line-height: $nav-height;
 }

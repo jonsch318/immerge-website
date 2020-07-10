@@ -3,22 +3,14 @@
     <ul
       class="d-flex list-style-none m-0 p-0 flex-direction-row header-height header-center"
     >
-      <li class="header-menu-item">
-        <a
-          routerLink="/"
-          class="d-flex mat-body header-menu-link header-height m-0 header-line-height text-decoration-none"
-          >Projects</a
-        >
+      <li class="header-menu-item mr-2">
+        <nav-projects-large class="d-block"></nav-projects-large>
       </li>
-      <li class="header-menu-item">
-        <a
-          routerLink="/about"
-          class="d-flex mat-body header-menu-link header-height m-0 header-line-height text-decoration-none"
-          >About us</a
-        >
+      <li class="header-menu-item mr-2">
+        <nav-link exRouterLink="/about" class="nav-main-link">About us</nav-link>
       </li>
-      <li class="header-menu-item">
-        <nav-link routerLink="/contact">Contact</nav-link>
+      <li class="header-menu-item mr-2">
+        <nav-link exRouterLink="/contact" class="nav-main-link">Contact</nav-link>
       </li>
     </ul>
   </nav>

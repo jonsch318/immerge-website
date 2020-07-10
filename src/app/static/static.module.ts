@@ -8,6 +8,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { NotFoundComponent } from "./containers/notfound/not-found.component";
 import { MatMenuModule } from "@angular/material/menu";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { AboutSite } from "./sites/about/about.site";
 
 @NgModule({
   imports: [
@@ -19,7 +20,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     MatButtonModule,
     MatMenuModule,
   ],
-  declarations: [IndexComponent, NotFoundComponent],
+  declarations: [IndexComponent, NotFoundComponent, AboutSite],
   exports: [],
 })
 export class StaticModule {}

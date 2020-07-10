@@ -42,7 +42,7 @@ export class HeaderMenuSmallComponent implements OnInit, OnDestroy {
     if ($event.target === this.containerRef.nativeElement) this.close.emit();
   }
 
-  handleSwipeUp(): void {
+  handleSwipe(): void {
     this.close.emit();
   }
 }

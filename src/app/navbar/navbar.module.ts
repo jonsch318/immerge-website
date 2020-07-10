@@ -13,10 +13,12 @@ import { NavIdentityComponent } from "./components/identity/identity";
 import { HeaderMenuLargeComponent } from "./containers/header-menu-lg/header-menu-lg";
 import { MatDividerModule } from "@angular/material/divider";
 import { DragDropModule } from "@angular/cdk/drag-drop";
-import { DropdownSmall } from "./components/dropdown-sm/dropdown-sm";
 import { ProjectsSmall } from "./dropdowns/projects/projects-sm";
 import { MatRippleModule } from "@angular/material/core";
 import { NavLinkComponent } from "./components/nav-link/nav-link";
+import { ProjectsLarge } from "./dropdowns/projects/projects-lg";
+import { MatMenuModule } from "@angular/material/menu";
+import { DropdownComponent } from "./components/dropdown/dropdown";
 
 @NgModule({
   imports: [
@@ -29,6 +31,7 @@ import { NavLinkComponent } from "./components/nav-link/nav-link";
     MatDividerModule,
     DragDropModule,
     MatRippleModule,
+    MatMenuModule,
   ],
   declarations: [
     MainNavbar,
@@ -37,9 +40,10 @@ import { NavLinkComponent } from "./components/nav-link/nav-link";
     HeaderMenuSmallComponent,
     NavIdentityComponent,
     HeaderMenuLargeComponent,
-    DropdownSmall,
     ProjectsSmall,
     NavLinkComponent,
+    ProjectsLarge,
+    DropdownComponent,
   ],
   exports: [MainNavbar],
 })

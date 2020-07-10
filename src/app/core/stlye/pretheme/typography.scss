@@ -9,6 +9,9 @@
 .text-decoration-underline{
   text-decoration: underline;
 }
+.outline-none{
+  outline: none !important;
+}
 
 @media (min-width: $width-desktop) {
   .list-style-lg-none{
@@ -19,5 +22,23 @@
   }
   .text-decoration-lg-underline{
     text-decoration: underline;
+  }
+  .outline-lg-none{
+     outline: none !important;
+   }
+}
+
+@media (max-width: $width-desktop) {
+  .list-style-sm-none{
+    list-style: none !important;
+  }
+  .text-decoration-sm-none{
+    text-decoration: none;
+  }
+  .text-decoration-sm-underline{
+    text-decoration: underline;
+  }
+  .outline-sm-none{
+    outline: none !important;
   }
 }
