@@ -7,8 +7,8 @@ import {
   Output,
   ViewChild,
 } from "@angular/core";
-import { Subscription } from "rxjs";
 import { NavigationEnd, Router } from "@angular/router";
+import { Subscription } from "rxjs";
 
 @Component({
   selector: "nav-header-menu-sm",
@@ -42,7 +42,7 @@ export class HeaderMenuSmallComponent implements OnInit, OnDestroy {
     if ($event.target === this.containerRef.nativeElement) this.close.emit();
   }
 
-  handleSwipeUp(): void {
+  handleSwipe(): void {
     this.close.emit();
   }
 }

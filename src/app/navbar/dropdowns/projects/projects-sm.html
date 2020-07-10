@@ -7,7 +7,13 @@
   <mat-icon>{{icon | async}}</mat-icon>
 </div>
 <div class="dropdown-content mat-body-1" *ngIf="open">
-  <nav-link class="px-4 py-1 dropdown-item" exRouterLink="/projects/context" matRipple
+  <nav-link class="px-4 py-1 dropdown-item" routerLink="/projects/context" matRipple
     >Context</nav-link
+  >
+  <nav-link class="px-4 py-1 dropdown-item" routerLink="/projects/standard" matRipple
+    >Standard Library</nav-link
+  >
+  <nav-link class="px-4 py-1 dropdown-item" routerLink="/projects/website" matRipple
+    >Website</nav-link
   >
 </div>

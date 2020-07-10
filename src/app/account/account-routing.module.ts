@@ -1,10 +1,12 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { SigninSite } from "./site/signin/signin.site";
 
 const routes: Routes = [
   {
-    path: "**",
-    redirectTo: "404",
+    path: "signin",
+    component: SigninSite,
+    data: { title: "Sign in to Immerge" },
   },
 ];
 
@@ -12,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AccountRoutingModule {}

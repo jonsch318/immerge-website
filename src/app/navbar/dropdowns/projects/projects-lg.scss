@@ -1,0 +1,14 @@
+@import "../../../core/stlye/pretheme-config";
+@import "../../nav-config";
+
+.link-list-item{
+   &:before{
+     content: "-";
+     margin-right: $pixel-1;
+   }
+}
+
+.full-height{
+  height: $nav-height;
+  line-height: $nav-height;
+}

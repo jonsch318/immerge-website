@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
-
+import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
+import { NavbarModule } from "./navbar/navbar.module";
 
 describe("AppComponent", () => {
   let component: AppComponent;
@@ -8,6 +9,7 @@ describe("AppComponent", () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [AppRoutingModule, NavbarModule],
       declarations: [AppComponent],
     }).compileComponents();
   }));

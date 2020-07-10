@@ -1,0 +1,9 @@
+@import "~@angular/material/theming";
+
+@mixin im-navbar-dropdown-theme($theme){
+  $background: map_get($theme, background);
+
+  .im-dropdown-panel{
+    background: mat-color($background, card);
+  }
+}
