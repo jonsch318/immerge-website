@@ -1,9 +1,9 @@
 module.exports = {
   plugins: {
     "postcss-import": {},
-    "precss": {},
-    "tailwindcss": {},
-    "autoprefixer": {},
+    precss: {},
+    tailwindcss: {},
+    autoprefixer: {},
     "postcss-reporter": {
       clearReportedMessages: true,
     },

@@ -6,9 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "eslint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "eslint": "eslint -c ./.eslintrc.ts.js  . --ext .ts",
     "stylelint": "stylelint '**/*.{css,scss,sass}'",
     "lint": "npm run eslint && npm run stylelint",
+    "lint:fix": "eslint -c ./.eslintrc.ts.js  . --ext .ts --fix && npm run stylelint -- --fix",
     "e2e": "ng e2e",
     "code-coverage": "ng test --no-watch --code-coverage"
   },
