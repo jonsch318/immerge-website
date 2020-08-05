@@ -11,7 +11,6 @@
 {
   @include im-navbar-main-navbar-theme($theme);
   @include im-navbar-logo-theme($theme);
-  @include im-navbar-nav-identity-theme($theme);
   @include im-navbar-header-menu-lg-theme($theme);
   @include im-navbar-header-menu-sm-theme($theme);
   @include im-navbar-hamburger-theme($theme);

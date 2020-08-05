@@ -1,8 +1,35 @@
-@mixin mr {
-    padding: 0;
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@import "global-styles.css";
+
+:root{
+  --primary-600: #1E3190;
+
+  --dark-text: #000;
+  --light-text: #fff;
+
+  --dark-primary-text: #000;
+  --dark-secondary-text: rgba(#000, 0.7);
+  --dark-disabled-text: rgba(#000, 0.38);
+  --dark-dividers: rgba(#000, 0.12);
+  --dark-focused: rgba(#000, 0.12);
+
+  --light-primary-text: #fff;
+  --light-secondary-text: rgba(#fff, 0.7);
+  --light-disabled-text: rgba(#fff, 0.5);
+  --light-dividers: rgba(#fff, 0.12);
+  --light-focused: rgba(#fff, 0.12);
 }
 
-body {
-    margin: 0;
-    @include mr;
+html, body
+{
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
+body { font-family: Roboto, "Helvetica Neue", sans-serif; }

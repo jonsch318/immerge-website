@@ -9,10 +9,3 @@
 @include angular-material-theme($im-lightgrey-blue-theme);
 @include im-app-theme($im-lightgrey-blue-theme);
 
-@import "global-styles";
-
-html, body
-{
-  height: 100%;
-}
-body { font-family: Roboto, "Helvetica Neue", sans-serif; }
