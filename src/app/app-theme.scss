@@ -1,7 +1,5 @@
-@import "./core/core-module-theme";
 @import "./navbar/navbar-module-theming";
 
 @mixin im-app-theme($theme){
-  @include im-core-mobile-theme($theme);
-  @include im-navbar-module-theme($theme);
+    @include im-navbar-module-theme($theme);
 }

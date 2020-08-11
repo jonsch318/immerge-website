@@ -1,20 +1,10 @@
 <div class="nav-identity-container d-flex header-height header-center">
-  <div class="signed-out d-flex">
-    <a
-      class="header-identity-link"
-      mat-flat-button
-      class="d-flex"
-      color="primary"
-      routerLink="/register"
-      >Register</a
-    >
-    <a
-      class="header-identity-link"
-      mat-flat-button
-      class="d-flex"
-      color="accent"
-      routerLink="/signin"
-      >Sign in</a
-    >
+  <div class="signed-out flex items-center h-full">
+    <a class="header-identity-link flex hover:bg-primary-500 text-on-primary-500 font-sans font-medium rounded px-4 h-8 mr-2 items-center"
+      routerLink="/register" matRipple>Register</a>
+    <a class="header-identity-link"
+      class="flex bg-accent-500 text-on-accent-500 font-sans font-medium rounded px-4 h-8 items-center"
+      routerLink="/signin" matRipple>Sign
+      in</a>
   </div>
 </div>

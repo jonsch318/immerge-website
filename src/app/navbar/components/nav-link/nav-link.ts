@@ -3,9 +3,9 @@ import { Component, Input } from "@angular/core";
 @Component({
   selector: "nav-link",
   templateUrl: "./nav-link.html",
-  styleUrls: ["./nav-link.scss"],
+  styleUrls: ["./nav-link.css"],
   host: {
-    class: "d-block",
+    class: "block cursor-pointer",
   },
 })
 export class NavLinkComponent {

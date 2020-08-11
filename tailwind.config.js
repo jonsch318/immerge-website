@@ -9,7 +9,7 @@ module.exports = {
       xl: "1280px",
     },
     fontFamily: {
-      sans: ["Roboto", '"Source Sans Pro"', "sans-serif"],
+      sans: ["Jost", "Roboto", '"Source Sans Pro"', "sans-serif"],
     },
   },
   variants: {},

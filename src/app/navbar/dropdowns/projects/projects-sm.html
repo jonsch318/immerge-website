@@ -1,19 +1,10 @@
-<div
-  class="header-menu-item py-1 px-3 mat-subheading-1 m-0"
-  (click)="handleClick()"
-  matRipple
->
+<div class="flex items-center header-height cursor-pointer py-1 px-3 mat-subheading-1 m-0" (click)="handleClick()"
+  matRipple>
   <h4 class="dropdown-trigger mat-subheading-1 m-0">Projects</h4>
   <mat-icon>{{icon | async}}</mat-icon>
 </div>
 <div class="dropdown-content mat-body-1" *ngIf="open">
-  <nav-link class="px-4 py-1 dropdown-item" routerLink="/projects/context" matRipple
-    >Context</nav-link
-  >
-  <nav-link class="px-4 py-1 dropdown-item" routerLink="/projects/standard" matRipple
-    >Standard Library</nav-link
-  >
-  <nav-link class="px-4 py-1 dropdown-item" routerLink="/projects/website" matRipple
-    >Website</nav-link
-  >
+  <nav-link class="px-4 py-1 dropdown-item" routerLink="/projects/context" matRipple>Context</nav-link>
+  <nav-link class="px-4 py-1 dropdown-item" routerLink="/projects/standard" matRipple>Standard Library</nav-link>
+  <nav-link class="px-4 py-1 dropdown-item" routerLink="/projects/website" matRipple>Website</nav-link>
 </div>

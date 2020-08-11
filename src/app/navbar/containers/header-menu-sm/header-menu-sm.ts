@@ -13,7 +13,7 @@ import { Subscription } from "rxjs";
 @Component({
   selector: "nav-header-menu-sm",
   templateUrl: "./nav-header-menu-sm.html",
-  styleUrls: ["./header-menu-sm.scss"],
+  styleUrls: ["./header-menu-sm.css"],
 })
 export class HeaderMenuSmallComponent implements OnInit, OnDestroy {
   private routerSubscription = Subscription.EMPTY;

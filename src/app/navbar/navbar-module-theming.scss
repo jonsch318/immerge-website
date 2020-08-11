@@ -1,19 +1,12 @@
-@import "./containers/navbar/navbar-theme";
 @import "./components/logo/logo-theme";
-@import "./components/identity/identity-theme";
 @import "./containers/header-menu-lg/header-menu-lg-theme";
-@import "./containers/header-menu-sm/header-menu-sm-theme";
 @import "./containers/hamburger/hamburger-theme";
-@import "./components/nav-link/nav-link-theme";
 @import "./components/dropdown/dropdown-theme";
 
 @mixin im-navbar-module-theme($theme)
 {
-  @include im-navbar-main-navbar-theme($theme);
   @include im-navbar-logo-theme($theme);
   @include im-navbar-header-menu-lg-theme($theme);
-  @include im-navbar-header-menu-sm-theme($theme);
   @include im-navbar-hamburger-theme($theme);
-  @include im-navbar-nav-link-theme($theme);
   @include im-navbar-dropdown-theme($theme);
 }

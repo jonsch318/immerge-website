@@ -1,4 +1,0 @@
-@import "~@angular/material/theming";
-@mixin im-navbar-header-menu-sm-theme($theme){
-  $background: map_get($theme, background);
-}
