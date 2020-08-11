@@ -5,7 +5,11 @@
     "projects": {
         "immerge-website": {
             "projectType": "application",
-            "schematics": {},
+            "schematics": {
+                "@schematics/angular:component": {
+                    "style": "scss"
+                }
+            },
             "root": "",
             "sourceRoot": "src",
             "prefix": "app",
@@ -31,10 +35,7 @@
                             "src/styles.scss",
                             "src/styles.css"
                         ],
-                        "scripts": [],
-                        "allowedCommonJsDependencies": [
-                            "hammerjs"
-                        ]
+                        "scripts": []
                     },
                     "configurations": {
                         "production": {

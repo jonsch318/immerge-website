@@ -7,15 +7,12 @@
   .logo-image{
     width: 22px;
   }
-  .logo-caption{
-
-  }
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: 767px) {
   .logo-container{
     .logo-caption{
-      line-height: $nav-height;
+      line-height: 40px;
     }
   }
 }

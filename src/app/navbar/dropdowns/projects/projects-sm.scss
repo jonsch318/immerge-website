@@ -1,16 +1,8 @@
 @import "../../../core/stlye/pretheme-config";
 
-.header-menu-item{
-  display: flex;
-  align-items: center;
-  height: 40px;
-}
-.header-menu-item{
-  cursor: pointer;
-}
 .dropdown-item{
   &:before{
     content: "-";
-    margin-right: $pixel-1;
+    margin-right: 0.25rem;
   }
 }

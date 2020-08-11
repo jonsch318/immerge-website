@@ -1,16 +1,10 @@
 <div>
-  <nav-link [matMenuTriggerFor]="menu" class="full-height">Projects</nav-link>
+  <nav-link [matMenuTriggerFor]="menu" class="header-height header-line-height">Projects</nav-link>
 </div>
 <nav-dropdown #menu class="py-1">
-  <nav-link routerLink="/projects/context" class="py-1 px-3 link-list-item" matRipple
-    >Context</nav-link
-  >
+  <nav-link routerLink="/projects/context" class="py-1 px-3 link-list-item" matRipple>Context</nav-link>
   <mat-divider></mat-divider>
-  <nav-link routerLink="/projects/standard" class="py-1 px-3 link-list-item" matRipple
-    >Standard Library</nav-link
-  >
+  <nav-link routerLink="/projects/standard" class="py-1 px-3 link-list-item" matRipple>Standard Library</nav-link>
   <mat-divider></mat-divider>
-  <nav-link routerLink="/projects/website" class="py-1 px-3 link-list-item" matRipple
-    >Website</nav-link
-  >
+  <nav-link routerLink="/projects/website" class="py-1 px-3 link-list-item" matRipple>Website</nav-link>
 </nav-dropdown>

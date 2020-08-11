@@ -1,11 +1,11 @@
-<header class="header header-height" [ngClass]="
+<header class="header header-height bg-background-app-bar transition-colors duration-150 ease-in-out" [ngClass]="
 {
   'sidenav': $sidenavOpen | async
 }">
-  <div class="header-container header-height mx-lg-4 mx-1 d-flex header-center">
-    <nav-hamburger class="d-sm-flex d-lg-none mr-1" (menuState)="$sidenavOpen.next($event)"></nav-hamburger>
-    <nav-logo class="d-flex flex-sm-auto justify-content-sm-center mr-lg-2"></nav-logo>
-    <nav-header-menu-lg class="d-lg-flex flex-lg-auto"></nav-header-menu-lg>
-    <nav-identity class="d-flex header-center"></nav-identity>
+  <div class="header-container header-height lg:mx-4 md:mx-1 flex header-center">
+    <nav-hamburger class="flex lg:hidden mr-1" (menuState)="$sidenavOpen.next($event)"></nav-hamburger>
+    <nav-logo class="flex lg:flex-none flex-auto justify-center lg:mr-8 lg:ml-4"></nav-logo>
+    <nav-header-menu-lg class="hidden lg:flex lg:flex-auto"></nav-header-menu-lg>
+    <nav-identity class="flex header-center"></nav-identity>
   </div>
 </header>
