@@ -5,10 +5,10 @@ import { MatMenuModule } from "@angular/material/menu";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { RouterModule } from "@angular/router";
 import { CoreModule } from "../core/core.module";
-import { IndexComponent } from "./containers/index/index.component";
 import { NotFoundComponent } from "./containers/notfound/not-found.component";
-import { AboutSite } from "./sites/about/about.site";
 import { StaticRoutingModule } from "./static-routing.module";
+import { IndexPage } from "./pages/index/index.page";
+import { AboutPage } from "./pages/about/about.page";
 
 @NgModule({
   imports: [
@@ -20,7 +20,7 @@ import { StaticRoutingModule } from "./static-routing.module";
     MatButtonModule,
     MatMenuModule,
   ],
-  declarations: [IndexComponent, NotFoundComponent, AboutSite],
+  declarations: [IndexPage, NotFoundComponent, AboutPage],
   exports: [],
 })
-export class StaticModule {}
+export class StaticModule { }

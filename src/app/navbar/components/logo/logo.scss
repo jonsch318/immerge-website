@@ -6,7 +6,14 @@
 
   .logo-image{
     width: 22px;
+    transform: translateY(-2px);
   }
+}
+
+.logo-caption-image{
+  width: 75px;
+  line-height: $nav-height !important;
+  transform: translateY(2px);
 }
 
 @media (min-width: 767px) {

@@ -1,25 +1,25 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { IndexComponent } from "./containers/index/index.component";
+import { IndexPage } from "./pages/index/index.page";
+import { AboutPage } from "./pages/about/about.page";
+import { ContactPage } from "./pages/contact/contact.page";
 import { NotFoundComponent } from "./containers/notfound/not-found.component";
-import { AboutSite } from "./sites/about/about.site";
-import { ContactSite } from "./sites/contact/contact.site";
 
 export const routes: Routes = [
   {
     path: "",
-    component: IndexComponent,
+    component: IndexPage,
   },
   {
     path: "about",
-    component: AboutSite,
+    component: AboutPage,
     data: {
       title: "About Immerge",
     },
   },
   {
     path: "contact",
-    component: ContactSite,
+    component: ContactPage,
     data: { title: "Contact Immerge" },
   },
   {
@@ -32,4 +32,4 @@ export const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class StaticRoutingModule {}
+export class StaticRoutingModule { }
