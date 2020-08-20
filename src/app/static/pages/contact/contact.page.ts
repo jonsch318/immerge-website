@@ -6,7 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: [],
 })
 export class ContactPage implements OnInit {
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 }

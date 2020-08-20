@@ -6,5 +6,5 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: [],
 })
 export class AboutPage implements OnInit {
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 }

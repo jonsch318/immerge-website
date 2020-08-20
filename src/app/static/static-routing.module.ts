@@ -1,9 +1,9 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { IndexPage } from "./pages/index/index.page";
+import { NotFoundComponent } from "./containers/notfound/not-found.component";
 import { AboutPage } from "./pages/about/about.page";
 import { ContactPage } from "./pages/contact/contact.page";
-import { NotFoundComponent } from "./containers/notfound/not-found.component";
+import { IndexPage } from "./pages/index/index.page";
 
 export const routes: Routes = [
   {
@@ -32,4 +32,4 @@ export const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class StaticRoutingModule { }
+export class StaticRoutingModule {}
