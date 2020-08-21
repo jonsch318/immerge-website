@@ -8,7 +8,7 @@
     "test": "ng test",
     "eslint": "eslint -c ./.eslintrc.ts.js  . --ext .ts",
     "stylelint": "stylelint '**/*.{css,scss,sass}'",
-    "lint": "npm run eslint && npm run stylelint",
+    "lint": "npm run eslint",
     "lint:fix": "eslint -c ./.eslintrc.ts.js  . --ext .ts --fix && npm run stylelint -- --fix",
     "e2e": "ng e2e",
     "code-coverage": "ng test --no-watch --code-coverage"
