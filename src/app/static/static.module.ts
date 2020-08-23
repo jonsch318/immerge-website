@@ -9,6 +9,7 @@ import { NotFoundComponent } from "./containers/notfound/not-found.component";
 import { AboutPage } from "./pages/about/about.page";
 import { IndexPage } from "./pages/index/index.page";
 import { StaticRoutingModule } from "./static-routing.module";
+import { MatIconModule } from "@angular/material/icon";
 
 @NgModule({
   imports: [
@@ -19,6 +20,7 @@ import { StaticRoutingModule } from "./static-routing.module";
     CoreModule,
     MatButtonModule,
     MatMenuModule,
+    MatIconModule,
   ],
   declarations: [IndexPage, NotFoundComponent, AboutPage],
   exports: [],

@@ -1,4 +1,4 @@
-<div class="hidden lg:flex header-height header-center">
+<div class="hidden md:flex header-height header-center">
   <nav class="flex">
     <ul class="flex list-none m-0 p-0 flex-row header-height header-center">
       <li class="header-menu-item mr-8">
@@ -8,7 +8,9 @@
         <nav-link exRouterLink="/about" class="nav-main-link">About us</nav-link>
       </li>
       <li class="header-menu-item">
-        <nav-link exRouterLink="/contact" class="nav-main-link">Contact</nav-link>
+        <a class="w-auto cursor-pointer no-underline m-0 p-0 header-nav-link font-sans font-normal opacity-75
+            hover:opacity-100 transition-colors duration-100 ease-in-out text-base block nav-main-link"
+          routerLink="/contact">Contact</a>
       </li>
     </ul>
   </nav>
