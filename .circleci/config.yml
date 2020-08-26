@@ -13,13 +13,9 @@ workflows:
       - test:
           requires:
             - build
-      - test-e2e:
-          requires:
-            - build
       - deploy:
           requires:
             - test
-            - test-e2e
           filters:
             branches:
               only: master
@@ -47,28 +43,6 @@ jobs:
       - run:
           name: Run Tests
           command: yarn run test --no-watch --no-progress --browsers=ChromeHeadlessCI
-
-  test-e2e:
-    docker:
-      - image: circleci/node:10-browsers
-    working_directory: ~/immerge-website
-    steps:
-      - checkout
-      - restore_cache:
-          name: Restore Yarn Package Cache
-          keys:
-            - yarn-packages-{{ checksum "yarn.lock" }}
-      - run:
-          name: Install Dependencies
-          command: yarn install --immutable
-      - save_cache:
-          name: Save Yarn Package Cache
-          key: yarn-packages-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache/yarn
-      - run:
-          name: Run Tests
-          command: yarn run e2e --protractor-config=e2e/protractor-ci.conf.js
 
   build:
     executor: build-executor
