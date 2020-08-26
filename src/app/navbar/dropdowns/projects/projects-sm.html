@@ -1,10 +1,12 @@
-<div class="flex items-center header-height cursor-pointer py-1 px-3 mat-subheading-1 m-0" (click)="handleClick()"
+<div class="flex items-center header-height cursor-pointer m-0 w-full py-2 px-8 font-sans" (click)="handleClick()"
   matRipple>
-  <h4 class="dropdown-trigger mat-subheading-1 m-0">Projects</h4>
-  <mat-icon>{{icon | async}}</mat-icon>
+  <div class="flex flex-row items-center">
+    <h4 class="dropdown-trigger text-lg mr-1">Projects</h4>
+    <mat-icon>{{icon | async}}</mat-icon>
+  </div>
 </div>
-<div class="dropdown-content mat-body-1" *ngIf="open">
-  <nav-link class="px-4 py-1 dropdown-item" routerLink="/projects/context" matRipple>Context</nav-link>
-  <nav-link class="px-4 py-1 dropdown-item" routerLink="/projects/standard" matRipple>Standard Library</nav-link>
-  <nav-link class="px-4 py-1 dropdown-item" routerLink="/projects/website" matRipple>Website</nav-link>
+<div class="dropdown-content" *ngIf="open">
+  <nav-link class="px-16 py-2 dropdown-item" routerLink="/projects/context" matRipple>Context</nav-link>
+  <nav-link class="px-16 py-2 dropdown-item" routerLink="/projects/standard" matRipple>Standard Library</nav-link>
+  <nav-link class="px-16 py-2 dropdown-item" routerLink="/projects/website" matRipple>Website</nav-link>
 </div>
